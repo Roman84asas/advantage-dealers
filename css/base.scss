@@ -47,9 +47,9 @@ header {
         max-width: 80px;
         display: block;
         li {
-            padding: 10px 0;
             @include transition_all;
             a {
+                padding: 10px 10px 10px 0;
                 @include dsp-flex;
                 @include flex-direction-column;
                 @include align-items-center;
@@ -86,6 +86,626 @@ header {
                 }
             }
         }
+        .parent_recruiting {
+            position: relative;
+            .children {
+                @include transition_all;
+                display: none;
+                position: absolute;
+                right: -250px;
+                top: -55px;
+                background-color: $menu-bgr;
+                width: 240px;
+                filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                li {
+                    a {
+                        @include dsp-flex;
+                        -webkit-flex-direction: unset;
+                        -ms-flex-direction: unset;
+                        flex-direction: unset;
+                        padding-left: 15px;
+                        @include align-items-center;
+                        span {
+                            text-align: left;
+                            color: $menu-fonts;
+                        }
+                    }
+                    @include transition_all;
+                    background: #263442;
+                    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+                }
+                .parent {
+                    position: relative;
+                    .children {
+                        @include transition_all;
+                        display: none;
+                        position: absolute;
+                        right: -250px;
+                        top: 0;
+                        background-color: $menu-bgr;
+                        width: 240px;
+                        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                        li {
+                            a {
+                                @include dsp-flex;
+                                -webkit-flex-direction: unset;
+                                -ms-flex-direction: unset;
+                                flex-direction: unset;
+                                padding-left: 15px;
+                                @include align-items-center;
+                                span {
+                                    text-align: left;
+                                    color: $menu-fonts;
+                                }
+                            }
+                            @include transition_all;
+                            background: #263442;
+                            box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+                        }
+                        li:hover {
+                            @include transition_all;
+                            background: #2F4050;
+                            a {
+                                span {
+                                    text-align: left;
+                                    color: $yellow;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            width: 10px;
+                            height: 10px;
+                            right: -15px;
+                            top: 15px;
+                            background: #263442;
+                            transform: rotate(-45deg);
+                        }
+                        .children {
+                            @include transition_all;
+                            display: block;
+                        }
+                    }
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 24px;
+                        height: 24px;
+                        background-image: url("../images/chevron-right.svg");
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        right: 5px;
+                        top: 5px;
+                    }
+                }
+                li:hover {
+                    @include transition_all;
+                    background: #2F4050;
+                    a {
+                        span {
+                            text-align: left;
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    right: -15px;
+                    top: 25px;
+                    background: #263442;
+                    transform: rotate(-45deg);
+                }
+                .children {
+                    @include transition_all;
+                    display: block;
+                }
+            }
+        }
+        .parent_selling {
+            position: relative;
+            .children {
+                @include transition_all;
+                display: none;
+                position: absolute;
+                right: -250px;
+                top: -120px;
+                background-color: $menu-bgr;
+                width: 240px;
+                filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                li {
+                    a {
+                        @include dsp-flex;
+                        -webkit-flex-direction: unset;
+                        -ms-flex-direction: unset;
+                        flex-direction: unset;
+                        padding-left: 15px;
+                        @include align-items-center;
+                        span {
+                            text-align: left;
+                            color: $menu-fonts;
+                        }
+                    }
+                    @include transition_all;
+                    background: #263442;
+                    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+                }
+                .parent {
+                    position: relative;
+                    .children {
+                        @include transition_all;
+                        display: none;
+                        position: absolute;
+                        right: -250px;
+                        top: 0;
+                        background-color: $menu-bgr;
+                        width: 240px;
+                        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                        li {
+                            a {
+                                @include dsp-flex;
+                                -webkit-flex-direction: unset;
+                                -ms-flex-direction: unset;
+                                flex-direction: unset;
+                                padding-left: 15px;
+                                @include align-items-center;
+                                span {
+                                    text-align: left;
+                                    color: $menu-fonts;
+                                }
+                            }
+                            @include transition_all;
+                            background: #263442;
+                            box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+                        }
+                        li:hover {
+                            @include transition_all;
+                            background: #2F4050;
+                            a {
+                                span {
+                                    text-align: left;
+                                    color: $yellow;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            width: 10px;
+                            height: 10px;
+                            right: -15px;
+                            top: 15px;
+                            background: #263442;
+                            transform: rotate(-45deg);
+                        }
+                        .children {
+                            @include transition_all;
+                            display: block;
+                        }
+                    }
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 24px;
+                        height: 24px;
+                        background-image: url("../images/chevron-right.svg");
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        right: 5px;
+                        top: 5px;
+                    }
+                }
+                li:hover {
+                    @include transition_all;
+                    background: #2F4050;
+                    a {
+                        span {
+                            text-align: left;
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    right: -15px;
+                    top: 25px;
+                    background: #263442;
+                    transform: rotate(-45deg);
+                }
+                .children {
+                    @include transition_all;
+                    display: block;
+                }
+            }
+        }
+        .parent_training {
+            position: relative;
+            .children {
+                @include transition_all;
+                display: none;
+                position: absolute;
+                right: -250px;
+                top: -185px;
+                background-color: $menu-bgr;
+                width: 240px;
+                filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                li {
+                    a {
+                        @include dsp-flex;
+                        -webkit-flex-direction: unset;
+                        -ms-flex-direction: unset;
+                        flex-direction: unset;
+                        padding-left: 15px;
+                        @include align-items-center;
+                        span {
+                            text-align: left;
+                            color: $menu-fonts;
+                        }
+                    }
+                    @include transition_all;
+                    background: #263442;
+                    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+                }
+                .parent {
+                    position: relative;
+                    .children {
+                        @include transition_all;
+                        display: none;
+                        position: absolute;
+                        right: -250px;
+                        top: 0;
+                        background-color: $menu-bgr;
+                        width: 240px;
+                        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                        li {
+                            a {
+                                @include dsp-flex;
+                                -webkit-flex-direction: unset;
+                                -ms-flex-direction: unset;
+                                flex-direction: unset;
+                                padding-left: 15px;
+                                @include align-items-center;
+                                span {
+                                    text-align: left;
+                                    color: $menu-fonts;
+                                }
+                            }
+                            @include transition_all;
+                            background: #263442;
+                            box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+                        }
+                        li:hover {
+                            @include transition_all;
+                            background: #2F4050;
+                            a {
+                                span {
+                                    text-align: left;
+                                    color: $yellow;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            width: 10px;
+                            height: 10px;
+                            right: -15px;
+                            top: 15px;
+                            background: #263442;
+                            transform: rotate(-45deg);
+                        }
+                        .children {
+                            @include transition_all;
+                            display: block;
+                        }
+                    }
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 24px;
+                        height: 24px;
+                        background-image: url("../images/chevron-right.svg");
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        right: 5px;
+                        top: 5px;
+                    }
+                }
+                li:hover {
+                    @include transition_all;
+                    background: #2F4050;
+                    a {
+                        span {
+                            text-align: left;
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    right: -15px;
+                    top: 25px;
+                    background: #263442;
+                    transform: rotate(-45deg);
+                }
+                .children {
+                    @include transition_all;
+                    display: block;
+                }
+            }
+        }
+        .parent_added {
+            position: relative;
+            .children {
+                @include transition_all;
+                display: none;
+                position: absolute;
+                right: -250px;
+                top: -250px;
+                background-color: $menu-bgr;
+                width: 240px;
+                filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                li {
+                    a {
+                        @include dsp-flex;
+                        -webkit-flex-direction: unset;
+                        -ms-flex-direction: unset;
+                        flex-direction: unset;
+                        padding-left: 15px;
+                        @include align-items-center;
+                        span {
+                            text-align: left;
+                            color: $menu-fonts;
+                        }
+                    }
+                    @include transition_all;
+                    background: #263442;
+                    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+                }
+                .parent {
+                    position: relative;
+                    .children {
+                        @include transition_all;
+                        display: none;
+                        position: absolute;
+                        right: -250px;
+                        top: 0;
+                        background-color: $menu-bgr;
+                        width: 240px;
+                        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                        li {
+                            a {
+                                @include dsp-flex;
+                                -webkit-flex-direction: unset;
+                                -ms-flex-direction: unset;
+                                flex-direction: unset;
+                                padding-left: 15px;
+                                @include align-items-center;
+                                span {
+                                    text-align: left;
+                                    color: $menu-fonts;
+                                }
+                            }
+                            @include transition_all;
+                            background: #263442;
+                            box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+                        }
+                        li:hover {
+                            @include transition_all;
+                            background: #2F4050;
+                            a {
+                                span {
+                                    text-align: left;
+                                    color: $yellow;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            width: 10px;
+                            height: 10px;
+                            right: -15px;
+                            top: 15px;
+                            background: #263442;
+                            transform: rotate(-45deg);
+                        }
+                        .children {
+                            @include transition_all;
+                            display: block;
+                        }
+                    }
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 24px;
+                        height: 24px;
+                        background-image: url("../images/chevron-right.svg");
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        right: 5px;
+                        top: 5px;
+                    }
+                }
+                li:hover {
+                    @include transition_all;
+                    background: #2F4050;
+                    a {
+                        span {
+                            text-align: left;
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    right: -15px;
+                    top: 25px;
+                    background: #263442;
+                    transform: rotate(-45deg);
+                }
+                .children {
+                    @include transition_all;
+                    display: block;
+                }
+            }
+        }
+        .parent_materials {
+            position: relative;
+            .children {
+                @include transition_all;
+                display: none;
+                position: absolute;
+                right: -250px;
+                top: -315px;
+                background-color: $menu-bgr;
+                width: 240px;
+                filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                li {
+                    a {
+                        @include dsp-flex;
+                        -webkit-flex-direction: unset;
+                        -ms-flex-direction: unset;
+                        flex-direction: unset;
+                        padding-left: 15px;
+                        @include align-items-center;
+                        span {
+                            text-align: left;
+                            color: $menu-fonts;
+                        }
+                    }
+                    @include transition_all;
+                    background: #263442;
+                    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+                }
+                .parent {
+                    position: relative;
+                    .children {
+                        @include transition_all;
+                        display: none;
+                        position: absolute;
+                        right: -250px;
+                        top: 0;
+                        background-color: $menu-bgr;
+                        width: 240px;
+                        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                        li {
+                            a {
+                                @include dsp-flex;
+                                -webkit-flex-direction: unset;
+                                -ms-flex-direction: unset;
+                                flex-direction: unset;
+                                padding-left: 15px;
+                                @include align-items-center;
+                                span {
+                                    text-align: left;
+                                    color: $menu-fonts;
+                                }
+                            }
+                            @include transition_all;
+                            background: #263442;
+                            box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+                        }
+                        li:hover {
+                            @include transition_all;
+                            background: #2F4050;
+                            a {
+                                span {
+                                    text-align: left;
+                                    color: $yellow;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            width: 10px;
+                            height: 10px;
+                            right: -15px;
+                            top: 15px;
+                            background: #263442;
+                            transform: rotate(-45deg);
+                        }
+                        .children {
+                            @include transition_all;
+                            display: block;
+                        }
+                    }
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 24px;
+                        height: 24px;
+                        background-image: url("../images/chevron-right.svg");
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        right: 5px;
+                        top: 5px;
+                    }
+                }
+                li:hover {
+                    @include transition_all;
+                    background: #2F4050;
+                    a {
+                        span {
+                            text-align: left;
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    right: -15px;
+                    top: 25px;
+                    background: #263442;
+                    transform: rotate(-45deg);
+                }
+                .children {
+                    @include transition_all;
+                    display: block;
+                }
+            }
+        }
         .active {
             background: #2F4050;
             a {
@@ -102,14 +722,15 @@ header {
         @media (max-width: 950px) {
             display: none;
             max-width: 950px;
-            padding: 5px 20px 0;
+            padding: 5px 0 0;
             li {
                 a {
                     flex-direction: initial;
                     -webkit-flex-direction: initial;
                     -ms-flex-direction: initial;
+                    width: auto;
                     svg {
-                        margin: 0 10px 5px 0;
+                        margin: 0 10px 5px 20px;
                         path {
                             stroke: $white;
                         }
@@ -119,6 +740,436 @@ header {
                         font-weight: 600;
                         font-size: 13px;
                         line-height: 21px;
+                    }
+                }
+            }
+            .parent_recruiting {
+                position: relative;
+                .children {
+                    position: relative;
+                    display: none;
+                    left: 0;
+                    top: 0;
+                    background-color: $menu-bgr;
+                    width: auto;
+                    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                    li {
+                        padding-left: 65px;
+                        a {
+                            @include dsp-flex;
+                            -webkit-flex-direction: unset;
+                            -ms-flex-direction: unset;
+                            flex-direction: unset;
+                            padding-left: 15px;
+                            @include align-items-center;
+                            span {
+                                text-align: left;
+                                color: $menu-fonts;
+                            }
+                        }
+                    }
+                    .parent {
+                        position: relative;
+                        .children {
+                            margin-left: -65px;
+                            display: none;
+                            left: 0;
+                            top: 0;
+                            position: relative;
+                            width: auto;
+                            background-color: $menu-bgr;
+                            filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                            li {
+                                padding-left: 130px;
+                                a {
+                                    @include dsp-flex;
+                                    -webkit-flex-direction: unset;
+                                    -ms-flex-direction: unset;
+                                    flex-direction: unset;
+                                    padding-left: 15px;
+                                    @include align-items-center;
+                                    span {
+                                        text-align: left;
+                                        color: $menu-fonts;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            &:before {
+                                width: 24px;
+                                height: 24px;
+                                right: 10px;
+                                top: 10px;
+                                transform: none;
+                                background: initial;
+                                background-image: url("../images/undo.svg ");
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            }
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    &:before {
+                        width: 24px;
+                        height: 24px;
+                        right: 10px;
+                        top: 10px;
+                        transform: none;
+                        background: initial;
+                        background-image: url("../images/undo.svg ");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+            }
+            .parent_selling {
+                position: relative;
+                .children {
+                    @include transition_all;
+                    display: none;
+                    left: 0;
+                    top: 0;
+                    position: relative;
+                    width: auto;
+                    background-color: $menu-bgr;
+                    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                    li {
+                        a {
+                            @include dsp-flex;
+                            -webkit-flex-direction: unset;
+                            -ms-flex-direction: unset;
+                            flex-direction: unset;
+                            padding-left: 15px;
+                            @include align-items-center;
+                            span {
+                                text-align: left;
+                                color: $menu-fonts;
+                            }
+                        }
+                    }
+                    .parent {
+                        position: relative;
+                        .children {
+                            margin-left: -65px;
+                            display: none;
+                            position: relative;
+                            width: auto;
+                            left: 0;
+                            top: 0;
+                            background-color: $menu-bgr;
+                            filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                            li {
+                                padding-left: 130px;
+                                a {
+                                    @include dsp-flex;
+                                    -webkit-flex-direction: unset;
+                                    -ms-flex-direction: unset;
+                                    flex-direction: unset;
+                                    padding-left: 15px;
+                                    @include align-items-center;
+                                    span {
+                                        text-align: left;
+                                        color: $menu-fonts;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            &:before {
+                                width: 24px;
+                                height: 24px;
+                                right: 10px;
+                                top: 10px;
+                                transform: none;
+                                background: initial;
+                                background-image: url("../images/undo.svg ");
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            }
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    &:before {
+                        width: 24px;
+                        height: 24px;
+                        right: 10px;
+                        top: 10px;
+                        transform: none;
+                        background: initial;
+                        background-image: url("../images/undo.svg ");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+            }
+            .parent_training {
+                position: relative;
+                .children {
+                    @include transition_all;
+                    display: none;
+                    width: auto;
+                    left: 0;
+                    top: 0;
+                    position: relative;
+                    background-color: $menu-bgr;
+                    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                    li {
+                        a {
+                            @include dsp-flex;
+                            -webkit-flex-direction: unset;
+                            -ms-flex-direction: unset;
+                            flex-direction: unset;
+                            padding-left: 15px;
+                            @include align-items-center;
+                            span {
+                                text-align: left;
+                                color: $menu-fonts;
+                            }
+                        }
+                    }
+                    .parent {
+                        position: relative;
+                        .children {
+                            margin-left: -65px;
+                            display: none;
+                            width: auto;
+                            left: 0;
+                            top: 0;
+                            position: relative;
+                            background-color: $menu-bgr;
+                            filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                            li {
+                                padding-left: 130px;
+                                a {
+                                    @include dsp-flex;
+                                    -webkit-flex-direction: unset;
+                                    -ms-flex-direction: unset;
+                                    flex-direction: unset;
+                                    padding-left: 15px;
+                                    @include align-items-center;
+                                    span {
+                                        text-align: left;
+                                        color: $menu-fonts;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            &:before {
+                                width: 24px;
+                                height: 24px;
+                                right: 10px;
+                                top: 10px;
+                                transform: none;
+                                background: initial;
+                                background-image: url("../images/undo.svg ");
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            }
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    &:before {
+                        width: 24px;
+                        height: 24px;
+                        right: 10px;
+                        top: 10px;
+                        transform: none;
+                        background: initial;
+                        background-image: url("../images/undo.svg ");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+            }
+            .parent_added {
+                position: relative;
+                .children {
+                    @include transition_all;
+                    display: none;
+                    width: auto;
+                    left: 0;
+                    top: 0;
+                    position: relative;
+                    background-color: $menu-bgr;
+                    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                    li {
+                        padding-left: 130px;
+                        a {
+                            @include dsp-flex;
+                            -webkit-flex-direction: unset;
+                            -ms-flex-direction: unset;
+                            flex-direction: unset;
+                            padding-left: 15px;
+                            @include align-items-center;
+                            span {
+                                text-align: left;
+                                color: $menu-fonts;
+                            }
+                        }
+                    }
+                    .parent {
+                        position: relative;
+                        .children {
+                            margin-left: -65px;
+                            display: none;
+                            width: auto;
+                            left: 0;
+                            top: 0;
+                            position: relative;
+                            background-color: $menu-bgr;
+                            filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                            li {
+                                a {
+                                    @include dsp-flex;
+                                    -webkit-flex-direction: unset;
+                                    -ms-flex-direction: unset;
+                                    flex-direction: unset;
+                                    padding-left: 15px;
+                                    @include align-items-center;
+                                    span {
+                                        text-align: left;
+                                        color: $menu-fonts;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            &:before {
+                                width: 24px;
+                                height: 24px;
+                                right: 10px;
+                                top: 10px;
+                                transform: none;
+                                background: initial;
+                                background-image: url("../images/undo.svg ");
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            }
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    &:before {
+                        width: 24px;
+                        height: 24px;
+                        right: 10px;
+                        top: 10px;
+                        transform: none;
+                        background: initial;
+                        background-image: url("../images/undo.svg ");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+            }
+            .parent_materials {
+                position: relative;
+                .children {
+                    @include transition_all;
+                    display: none;
+                    width: auto;
+                    left: 0;
+                    top: 0;
+                    position: relative;
+                    background-color: $menu-bgr;
+                    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                    li {
+                        padding-left: 130px;
+                        a {
+                            @include dsp-flex;
+                            -webkit-flex-direction: unset;
+                            -ms-flex-direction: unset;
+                            flex-direction: unset;
+                            padding-left: 15px;
+                            @include align-items-center;
+                            span {
+                                text-align: left;
+                                color: $menu-fonts;
+                            }
+                        }
+                    }
+                    .parent {
+                        position: relative;
+                        .children {
+                            margin-left: -65px;
+                            display: none;
+                            width: auto;
+                            left: 0;
+                            top: 0;
+                            position: relative;
+                            background-color: $menu-bgr;
+                            filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+                            li {
+                                a {
+                                    @include dsp-flex;
+                                    -webkit-flex-direction: unset;
+                                    -ms-flex-direction: unset;
+                                    flex-direction: unset;
+                                    padding-left: 15px;
+                                    @include align-items-center;
+                                    span {
+                                        text-align: left;
+                                        color: $menu-fonts;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            &:before {
+                                width: 24px;
+                                height: 24px;
+                                right: 10px;
+                                top: 10px;
+                                transform: none;
+                                background: initial;
+                                background-image: url("../images/undo.svg ");
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            }
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    &:before {
+                        width: 24px;
+                        height: 24px;
+                        right: 10px;
+                        top: 10px;
+                        transform: none;
+                        background: initial;
+                        background-image: url("../images/undo.svg ");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
                     }
                 }
             }
@@ -137,8 +1188,10 @@ header {
         height: auto;
     }
 }
+
 .active-menu {
     position: fixed;
+    overflow: scroll;
     width: 100%;
     z-index: 2;
     height: 100%;

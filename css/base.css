@@ -74,13 +74,13 @@ header {
     max-width: 80px;
     display: block; }
     header .menu li {
-      padding: 10px 0;
       transition: all 0.3s ease-in-out;
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
       -ms-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out; }
       header .menu li a {
+        padding: 10px 10px 10px 0;
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
@@ -116,6 +116,691 @@ header {
           stroke: #FFFFFF; }
         header .menu li:hover a span {
           color: #FFFFFF; }
+    header .menu .parent_recruiting {
+      position: relative; }
+      header .menu .parent_recruiting .children {
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        display: none;
+        position: absolute;
+        right: -250px;
+        top: -55px;
+        background-color: #263442;
+        width: 240px;
+        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+        header .menu .parent_recruiting .children li {
+          transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          background: #263442;
+          box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15); }
+          header .menu .parent_recruiting .children li a {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-direction: unset;
+            -ms-flex-direction: unset;
+            flex-direction: unset;
+            padding-left: 15px;
+            -webkit-align-items: center;
+            align-items: center; }
+            header .menu .parent_recruiting .children li a span {
+              text-align: left;
+              color: #BFC6C8; }
+        header .menu .parent_recruiting .children .parent {
+          position: relative; }
+          header .menu .parent_recruiting .children .parent .children {
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            display: none;
+            position: absolute;
+            right: -250px;
+            top: 0;
+            background-color: #263442;
+            width: 240px;
+            filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+            header .menu .parent_recruiting .children .parent .children li {
+              transition: all 0.3s ease-in-out;
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              background: #263442;
+              box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15); }
+              header .menu .parent_recruiting .children .parent .children li a {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: flex;
+                -webkit-flex-direction: unset;
+                -ms-flex-direction: unset;
+                flex-direction: unset;
+                padding-left: 15px;
+                -webkit-align-items: center;
+                align-items: center; }
+                header .menu .parent_recruiting .children .parent .children li a span {
+                  text-align: left;
+                  color: #BFC6C8; }
+            header .menu .parent_recruiting .children .parent .children li:hover {
+              transition: all 0.3s ease-in-out;
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              background: #2F4050; }
+              header .menu .parent_recruiting .children .parent .children li:hover a span {
+                text-align: left;
+                color: #ED8323; }
+          header .menu .parent_recruiting .children .parent:hover:before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            right: -15px;
+            top: 15px;
+            background: #263442;
+            transform: rotate(-45deg); }
+          header .menu .parent_recruiting .children .parent:hover .children {
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            display: block; }
+          header .menu .parent_recruiting .children .parent:after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background-image: url("../images/chevron-right.svg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            right: 5px;
+            top: 5px; }
+        header .menu .parent_recruiting .children li:hover {
+          transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          background: #2F4050; }
+          header .menu .parent_recruiting .children li:hover a span {
+            text-align: left;
+            color: #ED8323; }
+      header .menu .parent_recruiting:hover:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: -15px;
+        top: 25px;
+        background: #263442;
+        transform: rotate(-45deg); }
+      header .menu .parent_recruiting:hover .children {
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        display: block; }
+    header .menu .parent_selling {
+      position: relative; }
+      header .menu .parent_selling .children {
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        display: none;
+        position: absolute;
+        right: -250px;
+        top: -120px;
+        background-color: #263442;
+        width: 240px;
+        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+        header .menu .parent_selling .children li {
+          transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          background: #263442;
+          box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15); }
+          header .menu .parent_selling .children li a {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-direction: unset;
+            -ms-flex-direction: unset;
+            flex-direction: unset;
+            padding-left: 15px;
+            -webkit-align-items: center;
+            align-items: center; }
+            header .menu .parent_selling .children li a span {
+              text-align: left;
+              color: #BFC6C8; }
+        header .menu .parent_selling .children .parent {
+          position: relative; }
+          header .menu .parent_selling .children .parent .children {
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            display: none;
+            position: absolute;
+            right: -250px;
+            top: 0;
+            background-color: #263442;
+            width: 240px;
+            filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+            header .menu .parent_selling .children .parent .children li {
+              transition: all 0.3s ease-in-out;
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              background: #263442;
+              box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15); }
+              header .menu .parent_selling .children .parent .children li a {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: flex;
+                -webkit-flex-direction: unset;
+                -ms-flex-direction: unset;
+                flex-direction: unset;
+                padding-left: 15px;
+                -webkit-align-items: center;
+                align-items: center; }
+                header .menu .parent_selling .children .parent .children li a span {
+                  text-align: left;
+                  color: #BFC6C8; }
+            header .menu .parent_selling .children .parent .children li:hover {
+              transition: all 0.3s ease-in-out;
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              background: #2F4050; }
+              header .menu .parent_selling .children .parent .children li:hover a span {
+                text-align: left;
+                color: #ED8323; }
+          header .menu .parent_selling .children .parent:hover:before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            right: -15px;
+            top: 15px;
+            background: #263442;
+            transform: rotate(-45deg); }
+          header .menu .parent_selling .children .parent:hover .children {
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            display: block; }
+          header .menu .parent_selling .children .parent:after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background-image: url("../images/chevron-right.svg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            right: 5px;
+            top: 5px; }
+        header .menu .parent_selling .children li:hover {
+          transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          background: #2F4050; }
+          header .menu .parent_selling .children li:hover a span {
+            text-align: left;
+            color: #ED8323; }
+      header .menu .parent_selling:hover:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: -15px;
+        top: 25px;
+        background: #263442;
+        transform: rotate(-45deg); }
+      header .menu .parent_selling:hover .children {
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        display: block; }
+    header .menu .parent_training {
+      position: relative; }
+      header .menu .parent_training .children {
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        display: none;
+        position: absolute;
+        right: -250px;
+        top: -185px;
+        background-color: #263442;
+        width: 240px;
+        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+        header .menu .parent_training .children li {
+          transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          background: #263442;
+          box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15); }
+          header .menu .parent_training .children li a {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-direction: unset;
+            -ms-flex-direction: unset;
+            flex-direction: unset;
+            padding-left: 15px;
+            -webkit-align-items: center;
+            align-items: center; }
+            header .menu .parent_training .children li a span {
+              text-align: left;
+              color: #BFC6C8; }
+        header .menu .parent_training .children .parent {
+          position: relative; }
+          header .menu .parent_training .children .parent .children {
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            display: none;
+            position: absolute;
+            right: -250px;
+            top: 0;
+            background-color: #263442;
+            width: 240px;
+            filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+            header .menu .parent_training .children .parent .children li {
+              transition: all 0.3s ease-in-out;
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              background: #263442;
+              box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15); }
+              header .menu .parent_training .children .parent .children li a {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: flex;
+                -webkit-flex-direction: unset;
+                -ms-flex-direction: unset;
+                flex-direction: unset;
+                padding-left: 15px;
+                -webkit-align-items: center;
+                align-items: center; }
+                header .menu .parent_training .children .parent .children li a span {
+                  text-align: left;
+                  color: #BFC6C8; }
+            header .menu .parent_training .children .parent .children li:hover {
+              transition: all 0.3s ease-in-out;
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              background: #2F4050; }
+              header .menu .parent_training .children .parent .children li:hover a span {
+                text-align: left;
+                color: #ED8323; }
+          header .menu .parent_training .children .parent:hover:before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            right: -15px;
+            top: 15px;
+            background: #263442;
+            transform: rotate(-45deg); }
+          header .menu .parent_training .children .parent:hover .children {
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            display: block; }
+          header .menu .parent_training .children .parent:after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background-image: url("../images/chevron-right.svg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            right: 5px;
+            top: 5px; }
+        header .menu .parent_training .children li:hover {
+          transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          background: #2F4050; }
+          header .menu .parent_training .children li:hover a span {
+            text-align: left;
+            color: #ED8323; }
+      header .menu .parent_training:hover:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: -15px;
+        top: 25px;
+        background: #263442;
+        transform: rotate(-45deg); }
+      header .menu .parent_training:hover .children {
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        display: block; }
+    header .menu .parent_added {
+      position: relative; }
+      header .menu .parent_added .children {
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        display: none;
+        position: absolute;
+        right: -250px;
+        top: -250px;
+        background-color: #263442;
+        width: 240px;
+        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+        header .menu .parent_added .children li {
+          transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          background: #263442;
+          box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15); }
+          header .menu .parent_added .children li a {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-direction: unset;
+            -ms-flex-direction: unset;
+            flex-direction: unset;
+            padding-left: 15px;
+            -webkit-align-items: center;
+            align-items: center; }
+            header .menu .parent_added .children li a span {
+              text-align: left;
+              color: #BFC6C8; }
+        header .menu .parent_added .children .parent {
+          position: relative; }
+          header .menu .parent_added .children .parent .children {
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            display: none;
+            position: absolute;
+            right: -250px;
+            top: 0;
+            background-color: #263442;
+            width: 240px;
+            filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+            header .menu .parent_added .children .parent .children li {
+              transition: all 0.3s ease-in-out;
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              background: #263442;
+              box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15); }
+              header .menu .parent_added .children .parent .children li a {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: flex;
+                -webkit-flex-direction: unset;
+                -ms-flex-direction: unset;
+                flex-direction: unset;
+                padding-left: 15px;
+                -webkit-align-items: center;
+                align-items: center; }
+                header .menu .parent_added .children .parent .children li a span {
+                  text-align: left;
+                  color: #BFC6C8; }
+            header .menu .parent_added .children .parent .children li:hover {
+              transition: all 0.3s ease-in-out;
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              background: #2F4050; }
+              header .menu .parent_added .children .parent .children li:hover a span {
+                text-align: left;
+                color: #ED8323; }
+          header .menu .parent_added .children .parent:hover:before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            right: -15px;
+            top: 15px;
+            background: #263442;
+            transform: rotate(-45deg); }
+          header .menu .parent_added .children .parent:hover .children {
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            display: block; }
+          header .menu .parent_added .children .parent:after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background-image: url("../images/chevron-right.svg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            right: 5px;
+            top: 5px; }
+        header .menu .parent_added .children li:hover {
+          transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          background: #2F4050; }
+          header .menu .parent_added .children li:hover a span {
+            text-align: left;
+            color: #ED8323; }
+      header .menu .parent_added:hover:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: -15px;
+        top: 25px;
+        background: #263442;
+        transform: rotate(-45deg); }
+      header .menu .parent_added:hover .children {
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        display: block; }
+    header .menu .parent_materials {
+      position: relative; }
+      header .menu .parent_materials .children {
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        display: none;
+        position: absolute;
+        right: -250px;
+        top: -315px;
+        background-color: #263442;
+        width: 240px;
+        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+        header .menu .parent_materials .children li {
+          transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          background: #263442;
+          box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15); }
+          header .menu .parent_materials .children li a {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-direction: unset;
+            -ms-flex-direction: unset;
+            flex-direction: unset;
+            padding-left: 15px;
+            -webkit-align-items: center;
+            align-items: center; }
+            header .menu .parent_materials .children li a span {
+              text-align: left;
+              color: #BFC6C8; }
+        header .menu .parent_materials .children .parent {
+          position: relative; }
+          header .menu .parent_materials .children .parent .children {
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            display: none;
+            position: absolute;
+            right: -250px;
+            top: 0;
+            background-color: #263442;
+            width: 240px;
+            filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+            header .menu .parent_materials .children .parent .children li {
+              transition: all 0.3s ease-in-out;
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              background: #263442;
+              box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15); }
+              header .menu .parent_materials .children .parent .children li a {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: flex;
+                -webkit-flex-direction: unset;
+                -ms-flex-direction: unset;
+                flex-direction: unset;
+                padding-left: 15px;
+                -webkit-align-items: center;
+                align-items: center; }
+                header .menu .parent_materials .children .parent .children li a span {
+                  text-align: left;
+                  color: #BFC6C8; }
+            header .menu .parent_materials .children .parent .children li:hover {
+              transition: all 0.3s ease-in-out;
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              background: #2F4050; }
+              header .menu .parent_materials .children .parent .children li:hover a span {
+                text-align: left;
+                color: #ED8323; }
+          header .menu .parent_materials .children .parent:hover:before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            right: -15px;
+            top: 15px;
+            background: #263442;
+            transform: rotate(-45deg); }
+          header .menu .parent_materials .children .parent:hover .children {
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            display: block; }
+          header .menu .parent_materials .children .parent:after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background-image: url("../images/chevron-right.svg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            right: 5px;
+            top: 5px; }
+        header .menu .parent_materials .children li:hover {
+          transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          background: #2F4050; }
+          header .menu .parent_materials .children li:hover a span {
+            text-align: left;
+            color: #ED8323; }
+      header .menu .parent_materials:hover:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: -15px;
+        top: 25px;
+        background: #263442;
+        transform: rotate(-45deg); }
+      header .menu .parent_materials:hover .children {
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        display: block; }
     header .menu .active {
       background: #2F4050; }
       header .menu .active a svg path {
@@ -126,13 +811,14 @@ header {
       header .menu {
         display: none;
         max-width: 950px;
-        padding: 5px 20px 0; }
+        padding: 5px 0 0; }
         header .menu li a {
           flex-direction: initial;
           -webkit-flex-direction: initial;
-          -ms-flex-direction: initial; }
+          -ms-flex-direction: initial;
+          width: auto; }
           header .menu li a svg {
-            margin: 0 10px 5px 0; }
+            margin: 0 10px 5px 20px; }
             header .menu li a svg path {
               stroke: #FFFFFF; }
           header .menu li a span {
@@ -140,6 +826,403 @@ header {
             font-weight: 600;
             font-size: 13px;
             line-height: 21px; }
+        header .menu .parent_recruiting {
+          position: relative; }
+          header .menu .parent_recruiting .children {
+            position: relative;
+            display: none;
+            left: 0;
+            top: 0;
+            background-color: #263442;
+            width: auto;
+            filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+            header .menu .parent_recruiting .children li {
+              padding-left: 65px; }
+              header .menu .parent_recruiting .children li a {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: flex;
+                -webkit-flex-direction: unset;
+                -ms-flex-direction: unset;
+                flex-direction: unset;
+                padding-left: 15px;
+                -webkit-align-items: center;
+                align-items: center; }
+                header .menu .parent_recruiting .children li a span {
+                  text-align: left;
+                  color: #BFC6C8; }
+            header .menu .parent_recruiting .children .parent {
+              position: relative; }
+              header .menu .parent_recruiting .children .parent .children {
+                margin-left: -65px;
+                display: none;
+                left: 0;
+                top: 0;
+                position: relative;
+                width: auto;
+                background-color: #263442;
+                filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+                header .menu .parent_recruiting .children .parent .children li {
+                  padding-left: 130px; }
+                  header .menu .parent_recruiting .children .parent .children li a {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: flex;
+                    -webkit-flex-direction: unset;
+                    -ms-flex-direction: unset;
+                    flex-direction: unset;
+                    padding-left: 15px;
+                    -webkit-align-items: center;
+                    align-items: center; }
+                    header .menu .parent_recruiting .children .parent .children li a span {
+                      text-align: left;
+                      color: #BFC6C8; }
+              header .menu .parent_recruiting .children .parent:hover:before {
+                width: 24px;
+                height: 24px;
+                right: 10px;
+                top: 10px;
+                transform: none;
+                background: initial;
+                background-image: url("../images/undo.svg ");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center; }
+              header .menu .parent_recruiting .children .parent:hover:after {
+                display: none; }
+          header .menu .parent_recruiting:hover:before {
+            width: 24px;
+            height: 24px;
+            right: 10px;
+            top: 10px;
+            transform: none;
+            background: initial;
+            background-image: url("../images/undo.svg ");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center; }
+        header .menu .parent_selling {
+          position: relative; }
+          header .menu .parent_selling .children {
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            display: none;
+            left: 0;
+            top: 0;
+            position: relative;
+            width: auto;
+            background-color: #263442;
+            filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+            header .menu .parent_selling .children li a {
+              display: -webkit-flex;
+              display: -moz-flex;
+              display: -ms-flex;
+              display: flex;
+              -webkit-flex-direction: unset;
+              -ms-flex-direction: unset;
+              flex-direction: unset;
+              padding-left: 15px;
+              -webkit-align-items: center;
+              align-items: center; }
+              header .menu .parent_selling .children li a span {
+                text-align: left;
+                color: #BFC6C8; }
+            header .menu .parent_selling .children .parent {
+              position: relative; }
+              header .menu .parent_selling .children .parent .children {
+                margin-left: -65px;
+                display: none;
+                position: relative;
+                width: auto;
+                left: 0;
+                top: 0;
+                background-color: #263442;
+                filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+                header .menu .parent_selling .children .parent .children li {
+                  padding-left: 130px; }
+                  header .menu .parent_selling .children .parent .children li a {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: flex;
+                    -webkit-flex-direction: unset;
+                    -ms-flex-direction: unset;
+                    flex-direction: unset;
+                    padding-left: 15px;
+                    -webkit-align-items: center;
+                    align-items: center; }
+                    header .menu .parent_selling .children .parent .children li a span {
+                      text-align: left;
+                      color: #BFC6C8; }
+              header .menu .parent_selling .children .parent:hover:before {
+                width: 24px;
+                height: 24px;
+                right: 10px;
+                top: 10px;
+                transform: none;
+                background: initial;
+                background-image: url("../images/undo.svg ");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center; }
+              header .menu .parent_selling .children .parent:hover:after {
+                display: none; }
+          header .menu .parent_selling:hover:before {
+            width: 24px;
+            height: 24px;
+            right: 10px;
+            top: 10px;
+            transform: none;
+            background: initial;
+            background-image: url("../images/undo.svg ");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center; }
+        header .menu .parent_training {
+          position: relative; }
+          header .menu .parent_training .children {
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            display: none;
+            width: auto;
+            left: 0;
+            top: 0;
+            position: relative;
+            background-color: #263442;
+            filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+            header .menu .parent_training .children li a {
+              display: -webkit-flex;
+              display: -moz-flex;
+              display: -ms-flex;
+              display: flex;
+              -webkit-flex-direction: unset;
+              -ms-flex-direction: unset;
+              flex-direction: unset;
+              padding-left: 15px;
+              -webkit-align-items: center;
+              align-items: center; }
+              header .menu .parent_training .children li a span {
+                text-align: left;
+                color: #BFC6C8; }
+            header .menu .parent_training .children .parent {
+              position: relative; }
+              header .menu .parent_training .children .parent .children {
+                margin-left: -65px;
+                display: none;
+                width: auto;
+                left: 0;
+                top: 0;
+                position: relative;
+                background-color: #263442;
+                filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+                header .menu .parent_training .children .parent .children li {
+                  padding-left: 130px; }
+                  header .menu .parent_training .children .parent .children li a {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: flex;
+                    -webkit-flex-direction: unset;
+                    -ms-flex-direction: unset;
+                    flex-direction: unset;
+                    padding-left: 15px;
+                    -webkit-align-items: center;
+                    align-items: center; }
+                    header .menu .parent_training .children .parent .children li a span {
+                      text-align: left;
+                      color: #BFC6C8; }
+              header .menu .parent_training .children .parent:hover:before {
+                width: 24px;
+                height: 24px;
+                right: 10px;
+                top: 10px;
+                transform: none;
+                background: initial;
+                background-image: url("../images/undo.svg ");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center; }
+              header .menu .parent_training .children .parent:hover:after {
+                display: none; }
+          header .menu .parent_training:hover:before {
+            width: 24px;
+            height: 24px;
+            right: 10px;
+            top: 10px;
+            transform: none;
+            background: initial;
+            background-image: url("../images/undo.svg ");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center; }
+        header .menu .parent_added {
+          position: relative; }
+          header .menu .parent_added .children {
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            display: none;
+            width: auto;
+            left: 0;
+            top: 0;
+            position: relative;
+            background-color: #263442;
+            filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+            header .menu .parent_added .children li {
+              padding-left: 130px; }
+              header .menu .parent_added .children li a {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: flex;
+                -webkit-flex-direction: unset;
+                -ms-flex-direction: unset;
+                flex-direction: unset;
+                padding-left: 15px;
+                -webkit-align-items: center;
+                align-items: center; }
+                header .menu .parent_added .children li a span {
+                  text-align: left;
+                  color: #BFC6C8; }
+            header .menu .parent_added .children .parent {
+              position: relative; }
+              header .menu .parent_added .children .parent .children {
+                margin-left: -65px;
+                display: none;
+                width: auto;
+                left: 0;
+                top: 0;
+                position: relative;
+                background-color: #263442;
+                filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+                header .menu .parent_added .children .parent .children li a {
+                  display: -webkit-flex;
+                  display: -moz-flex;
+                  display: -ms-flex;
+                  display: flex;
+                  -webkit-flex-direction: unset;
+                  -ms-flex-direction: unset;
+                  flex-direction: unset;
+                  padding-left: 15px;
+                  -webkit-align-items: center;
+                  align-items: center; }
+                  header .menu .parent_added .children .parent .children li a span {
+                    text-align: left;
+                    color: #BFC6C8; }
+              header .menu .parent_added .children .parent:hover:before {
+                width: 24px;
+                height: 24px;
+                right: 10px;
+                top: 10px;
+                transform: none;
+                background: initial;
+                background-image: url("../images/undo.svg ");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center; }
+              header .menu .parent_added .children .parent:hover:after {
+                display: none; }
+          header .menu .parent_added:hover:before {
+            width: 24px;
+            height: 24px;
+            right: 10px;
+            top: 10px;
+            transform: none;
+            background: initial;
+            background-image: url("../images/undo.svg ");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center; }
+        header .menu .parent_materials {
+          position: relative; }
+          header .menu .parent_materials .children {
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            display: none;
+            width: auto;
+            left: 0;
+            top: 0;
+            position: relative;
+            background-color: #263442;
+            filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+            header .menu .parent_materials .children li {
+              padding-left: 130px; }
+              header .menu .parent_materials .children li a {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: flex;
+                -webkit-flex-direction: unset;
+                -ms-flex-direction: unset;
+                flex-direction: unset;
+                padding-left: 15px;
+                -webkit-align-items: center;
+                align-items: center; }
+                header .menu .parent_materials .children li a span {
+                  text-align: left;
+                  color: #BFC6C8; }
+            header .menu .parent_materials .children .parent {
+              position: relative; }
+              header .menu .parent_materials .children .parent .children {
+                margin-left: -65px;
+                display: none;
+                width: auto;
+                left: 0;
+                top: 0;
+                position: relative;
+                background-color: #263442;
+                filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25)); }
+                header .menu .parent_materials .children .parent .children li a {
+                  display: -webkit-flex;
+                  display: -moz-flex;
+                  display: -ms-flex;
+                  display: flex;
+                  -webkit-flex-direction: unset;
+                  -ms-flex-direction: unset;
+                  flex-direction: unset;
+                  padding-left: 15px;
+                  -webkit-align-items: center;
+                  align-items: center; }
+                  header .menu .parent_materials .children .parent .children li a span {
+                    text-align: left;
+                    color: #BFC6C8; }
+              header .menu .parent_materials .children .parent:hover:before {
+                width: 24px;
+                height: 24px;
+                right: 10px;
+                top: 10px;
+                transform: none;
+                background: initial;
+                background-image: url("../images/undo.svg ");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center; }
+              header .menu .parent_materials .children .parent:hover:after {
+                display: none; }
+          header .menu .parent_materials:hover:before {
+            width: 24px;
+            height: 24px;
+            right: 10px;
+            top: 10px;
+            transform: none;
+            background: initial;
+            background-image: url("../images/undo.svg ");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center; }
         header .menu .active {
           background: #263442; } }
   header .add_video_header {
@@ -152,6 +1235,7 @@ header {
 
 .active-menu {
   position: fixed;
+  overflow: scroll;
   width: 100%;
   z-index: 2;
   height: 100%; }
