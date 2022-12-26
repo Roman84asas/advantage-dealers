@@ -366,7 +366,53 @@ header {
             border-radius: 50%;
             display: block; }
       .content .breadcrumbs-account .wrapper .account .account_popup {
-        display: none; }
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        display: none;
+        position: absolute;
+        width: 112px;
+        height: 68px;
+        left: -45px;
+        top: 54px;
+        background-color: #FFFFFF;
+        filter: drop-shadow(0px 14px 21px rgba(0, 0, 0, 0.13)); }
+        .content .breadcrumbs-account .wrapper .account .account_popup .account_popup_item {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: flex;
+          -webkit-align-items: center;
+          align-items: center;
+          display: block;
+          text-decoration: none;
+          padding: 6px 20px;
+          width: auto;
+          border-bottom: 1px solid #EBEDEE;
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 22px;
+          color: #29292A; }
+        .content .breadcrumbs-account .wrapper .account .account_popup .account_popup_item:last-child {
+          border-bottom: none; }
+      .content .breadcrumbs-account .wrapper .account:hover .account_content .account_url svg {
+        background-color: #FFFFFF;
+        border: 1px solid #ED8323;
+        width: 32px;
+        height: 32px; }
+        .content .breadcrumbs-account .wrapper .account:hover .account_content .account_url svg circle {
+          fill: #FFFFFF; }
+      .content .breadcrumbs-account .wrapper .account:hover .account_popup {
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        display: block; }
     @media (max-width: 950px) {
       .content .breadcrumbs-account .wrapper .breadcrumbs {
         padding-top: 20px;
