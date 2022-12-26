@@ -69,3 +69,33 @@
 }
 
 //Element style
+
+@mixin button-style {
+    background: #ED8323;
+    border-radius: 10px;
+    padding: 9px 20px;
+    @include fit_content;
+    @include dsp-flex;
+    @include justify-content-center;
+    @include align-items-center;
+    @include transition_all;
+    cursor: pointer;
+    svg {
+        display: block;
+        margin-right: 10px;
+    }
+    span {
+        display: block;
+        font-family: $poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: $white;
+    }
+    &:hover {
+        @include transition_all;
+        background-color: #DB6C08;
+    }
+}
