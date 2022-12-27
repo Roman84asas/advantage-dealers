@@ -284,6 +284,7 @@
 
 .slider-analytics {
     background: #F5F8FA;
+    padding-bottom: 60px;
     .wrapper {
         padding: 40px 0;
         .slider-analytics_top {
@@ -589,5 +590,141 @@
             }
         }
         padding: 0;
+    }
+}
+
+.we-are {
+    background: #FBFBFB;
+    padding-top: 98px;
+    padding-bottom: 100px;
+    .wrapper{
+        .we-are_title {
+            position: relative;
+            @include fit_content;
+            @include margin-left-right-auto;
+            font-family: $poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 24px;
+            text-align: center;
+            color: #1A1A1A;
+            padding-bottom: 18px;
+            margin-bottom: 12px;
+            &:after {
+                position: absolute;
+                content: '';
+                height: 1px;
+                width: 30px;
+                background-color: $yellow;
+                bottom: 0;
+                left: 65px;
+            }
+        }
+        .we-are_description {
+            font-family: $poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #1A1A1A;
+            max-width: 725px;
+            width: 100%;
+            @include margin-left-right-auto;
+            margin-bottom: 54px;
+        }
+        .we-are_items {
+            @include dsp-flex;
+            @include justify-content-space-between;
+            .item {
+                background: #FFFFFF;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+                border-radius: 3px;
+                width: 260px;
+                border: 1px solid #FFFFFF;
+                padding-top: 30px;
+                padding-bottom: 24px;
+                @include transition_all;
+                .item_logo {
+                    display: block;
+                    @include margin-left-right-auto;
+                    width: 50px;
+                    height: 50px;
+                    margin-bottom: 20px;
+                }
+                .item_title {
+                    @include fit_content;
+                    @include margin-left-right-auto;
+                    font-family: $poppins;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #1A1A1A;
+                    margin-bottom: 2px;
+                }
+                .item_rev {
+                    @include fit_content;
+                    @include margin-left-right-auto;
+                    font-family: $poppins;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 24px;
+                    color: #444647;
+                }
+                .stars {
+                    @include fit_content;
+                    @include margin-left-right-auto;
+                    max-width: 178px;
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+                }
+                .item_reit {
+                    @include fit_content;
+                    @include margin-left-right-auto;
+                    font-family: $poppins;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #1A1A1A;
+                }
+                &:hover {
+                    @include transition_all;
+                    border: 1px solid $yellow;
+                }
+            }
+            @media (max-width: 1150px) {
+                max-width: 700px;
+                @include margin-left-right-auto;
+                @include flex-wrap-wrap;
+                .item {
+                    width: 340px;
+                    margin-bottom: 20px;
+                }
+            }
+            @media (max-width: 770px) {
+                max-width: 340px;
+            }
+            @media (max-width: 420px) {
+                max-width: 320px;
+                .item {
+                    width: 320px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1150px) {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    @media (max-width: 770px) {
+        padding-top: 30px;
+        padding-bottom: 20px;
     }
 }
