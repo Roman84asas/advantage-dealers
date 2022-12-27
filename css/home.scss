@@ -1,4 +1,282 @@
 @charset "UTF-8";
 @import "Variable/_variable";
 
-
+.slider-small-block {
+    .wrapper {
+        padding: 40px 0;
+        border-bottom: 1px solid $grey;
+        .slider-small-block_top {
+            @include dsp-flex;
+            @include justify-content-space-between;
+            margin-bottom: 12px;
+            .slider-small-block_title_link {
+                @include dsp-flex;
+                .slider-small-block_title {
+                    font-family: $poppins;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: $fonts;
+                    margin-right: 15px;
+                }
+                .slider-small-block_link {
+                    padding-top: 3px;
+                    display: block;
+                    font-family: $poppins;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: $yellow;
+                    @include transition_all;
+                    &:hover {
+                        @include transition_all;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .slider-small-block_navigation {
+                max-width: 70px;
+                width: 100%;
+                @include dsp-flex;
+                @include justify-content-space-between;
+                .slider-small-button {
+                    width: 24px;
+                    height: 24px;
+                    cursor: pointer;
+                    svg {
+                        display: block;
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+            @media (max-width: 950px) {
+                .slider-small-block_title_link {
+                    @include dsp-flex;
+                    @include justify-content-space-between;
+                    width: 100%;
+                }
+                .slider-small-block_navigation {
+                    display: none;
+                }
+            }
+        }
+        .slider-small-block {
+            max-width: 1760px;
+            width: 100%;
+            overflow: hidden;
+            .items {
+                .item {
+                    max-width: 360px;
+                    width: 100%;
+                    position: relative;
+                    .item_label {
+                        position: absolute;
+                        width: auto;
+                        height: auto;
+                        background: rgba(255, 255, 255, 0.3);
+                        backdrop-filter: blur(2.5px);
+                        border-radius: 100px;
+                        font-family: $poppins;
+                        top: 10px;
+                        right: 10px;
+                        padding: 2px 15px;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 11px;
+                        line-height: 16px;
+                        text-align: center;
+                        color: #E6F3F8;
+                    }
+                    .item_img {
+                        @include transition_all;
+                        display: block;
+                        max-width: 360px;
+                        width: 100%;
+                        height: 200px;
+                        border-radius: 3px;
+                        margin-bottom: 10px;
+                    }
+                    .item_title {
+                        @include transition_all;
+                        display: block;
+                        text-decoration: none;
+                        font-family: $poppins;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: $fonts;
+                        margin-bottom: 2px;
+                    }
+                    .item_autor {
+                        font-family: $poppins;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: $fonts-light;
+                        margin-bottom: 10px;
+                    }
+                    .item_tags {
+                        @include dsp-flex;
+                        overflow: hidden;
+                        .item_tag {
+                            display: block;
+                            text-decoration: none;
+                            background: #DDE0E1;
+                            border-radius: 6px;
+                            padding: 2px 5px;
+                            font-family: $poppins;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 11px;
+                            line-height: 16px;
+                            text-align: center;
+                            color: $fonts-points;
+                            @include transition_all;
+                            margin-right: 10px;
+                            &:hover {
+                                @include transition_all;
+                                background: $yellow;
+                                color: $white;
+                            }
+                        }
+                        .item_tag:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                    &:hover {
+                        .item_title {
+                            @include transition_all;
+                            color: $yellow;
+                        }
+                    }
+                }
+                .item_liked {
+                    max-width: 555px;
+                    height: 310px;
+                    width: 100%;
+                    position: relative;
+                    @include dsp-flex;
+                    @include flex-direction-column;
+                    border-radius: 3px;
+                    .item_label {
+                        position: absolute;
+                        width: auto;
+                        height: auto;
+                        background: rgba(255, 255, 255, 0.3);
+                        backdrop-filter: blur(2.5px);
+                        border-radius: 100px;
+                        font-family: $poppins;
+                        top: 10px;
+                        right: 10px;
+                        padding: 2px 15px;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 11px;
+                        line-height: 16px;
+                        text-align: center;
+                        color: #E6F3F8;
+                    }
+                    .item_liked_bottom {
+                        padding: 13px 20px 20px;
+                        width: auto;
+                        background: rgba(0, 0, 0, 0.25);
+                        backdrop-filter: blur(5px);
+                        border-radius: 0 0 3px 3px;
+                        margin-top: auto;
+                        .item_title {
+                            @include transition_all;
+                            display: block;
+                            text-decoration: none;
+                            font-family: $poppins;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: $white;
+                            margin-bottom: 2px;
+                        }
+                        .item_autor {
+                            font-family: $poppins;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: $menu-fonts;
+                            margin-bottom: 10px;
+                        }
+                        .item_tags {
+                            overflow: hidden;
+                            @include dsp-flex;
+                            .item_tag {
+                                display: block;
+                                text-decoration: none;
+                                background: rgba(0, 0, 0, 0.4);
+                                backdrop-filter: blur(2.5px);
+                                border-radius: 6px;
+                                padding: 2px 5px;
+                                font-family: $poppins;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 11px;
+                                line-height: 16px;
+                                text-align: center;
+                                color: $menu-fonts;
+                                @include transition_all;
+                                margin-right: 10px;
+                                &:hover {
+                                    @include transition_all;
+                                    background: $yellow;
+                                    color: $white;
+                                }
+                            }
+                            .item_tag:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                    &:hover {
+                        .item_liked_bottom {
+                            .item_title {
+                                @include transition_all;
+                                color: $yellow;
+                            }
+                        }
+                    }
+                    @media (max-width: 950px) {
+                        max-width: 360px;
+                        width: 100%;
+                        height: 280px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        .wrapper {
+            .slider-small-block_top {
+                .slider-small-block_title_link {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
+            .slider-small-block {
+                width: auto;
+                margin-left: 20px;
+                .items {
+                    .item {
+                        max-width: 320px;
+                    }
+                    .item_liked {
+                        max-width: 320px;
+                    }
+                }
+            }
+        }
+        padding: 0;
+    }
+}
