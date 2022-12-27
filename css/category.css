@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+.content {
+  width: 100%; }
+
+section {
+  padding: 0 30px; }
+  @media (max-width: 950px) {
+    section {
+      padding: 0 20px; } }
+
+body {
+  background: #FFFFFF; }
+
+html {
+  height: 100%; }
+
+.top-category {
+  background: #FBFBFB;
+  padding-top: 75px;
+  padding-bottom: 45px; }
+  .top-category .wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center; }
+    .top-category .wrapper .top-category_title {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 24px;
+      color: #1A1A1A;
+      padding-bottom: 20px;
+      position: relative;
+      max-width: 540px;
+      margin-right: 60px; }
+      .top-category .wrapper .top-category_title:after {
+        position: absolute;
+        content: '';
+        height: 1px;
+        width: 30px;
+        background-color: #ED8323;
+        bottom: 0;
+        left: 0; }
+    .top-category .wrapper .top-category_description {
+      max-width: 540px;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #1A1A1A; }
+    @media (max-width: 1195px) {
+      .top-category .wrapper {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: initial;
+        align-items: initial; }
+        .top-category .wrapper .top-category_title {
+          margin-bottom: 6px;
+          margin-right: 0;
+          max-width: 1195px; }
+        .top-category .wrapper .top-category_description {
+          max-width: 1195px; } }
+    @media (max-width: 605px) {
+      .top-category .wrapper .top-category_title {
+        font-size: 18px;
+        padding-bottom: 18px;
+        margin-bottom: 12px; } }
+  @media (max-width: 1195px) {
+    .top-category {
+      padding-top: 30px;
+      padding-bottom: 30px; } }

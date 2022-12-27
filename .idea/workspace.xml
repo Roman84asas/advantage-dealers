@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="SCSS File" />
       </list>
     </option>
@@ -26,6 +27,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
@@ -49,7 +51,7 @@
       <updated>1671987091434</updated>
       <workItem from="1671987092496" duration="3406000" />
       <workItem from="1672050284037" duration="22215000" />
-      <workItem from="1672128674755" duration="29383000" />
+      <workItem from="1672128674755" duration="30385000" />
     </task>
     <servers />
   </component>

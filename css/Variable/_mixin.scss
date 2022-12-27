@@ -31,6 +31,10 @@
     -webkit-align-items: center;
     align-items: center;
 }
+@mixin align-items-initial {
+    -webkit-align-items: initial;
+    align-items: initial;
+}
 @mixin justify-content-unset {
     -webkit-justify-content: unset;
     justify-content: unset;
