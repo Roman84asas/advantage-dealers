@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 .wrapper {
   width: 100%;
@@ -84,7 +85,7 @@ html {
 .slider-small-block {
   background: #F5F8FA; }
   .slider-small-block .wrapper {
-    padding: 40px 0;
+    padding: 24px 0 40px;
     border-bottom: 1px solid #EBEDEE; }
     .slider-small-block .wrapper .slider-small-block_top {
       display: -webkit-flex;
@@ -604,3 +605,564 @@ html {
   @media (max-width: 650px) {
     .last-post {
       padding-bottom: 0; } }
+
+.search-filter {
+  background: #F5F8FA;
+  padding-top: 40px; }
+  .search-filter .wrapper {
+    background: #FDFDFD;
+    border: 1px solid #DDEBEF;
+    border-radius: 100px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex; }
+    .search-filter .wrapper .search {
+      padding-top: 7px;
+      padding-bottom: 7px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      width: 45%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: flex;
+      border-right: 1px solid #EBEDEE;
+      margin-right: 20px; }
+      .search-filter .wrapper .search svg {
+        margin-left: 20px;
+        display: block;
+        width: 18px;
+        height: 18px;
+        margin-right: 10px; }
+      .search-filter .wrapper .search .search_input {
+        border: none;
+        height: 22px;
+        width: 90%;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #1A1A1A; }
+        .search-filter .wrapper .search .search_input::-webkit-input-placeholder {
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          color: #8E989B; }
+        .search-filter .wrapper .search .search_input::-moz-placeholder {
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          color: #8E989B; }
+        .search-filter .wrapper .search .search_input:-ms-input-placeholder {
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          color: #8E989B; }
+        .search-filter .wrapper .search .search_input:-webkit-autofill, .search-filter .wrapper .search .search_input:focus-visible, .search-filter .wrapper .search .search_input:-webkit-autofill:hover, .search-filter .wrapper .search .search_input:-webkit-autofill:focus, .search-filter .wrapper .search .search_input:-webkit-autofill:focus-visible, .search-filter .wrapper .search .search_input:-webkit-autofill, .search-filter .wrapper .search .search_input:-webkit-autofill:hover, .search-filter .wrapper .search .search_input:-webkit-autofill:focus, .search-filter .wrapper .search .search_input:-webkit-autofill, .search-filter .wrapper .search .search_input:-webkit-autofill:hover, .search-filter .wrapper .search .search_input:-webkit-autofill:focus {
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: none;
+          -webkit-text-fill-color: #1A1A1A;
+          -webkit-box-shadow: none;
+          transition: background-color 5000s ease-in-out 0s;
+          outline: none; }
+      .search-filter .wrapper .search .icon_close {
+        display: none;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        margin-right: 20px; }
+    .search-filter .wrapper .active svg path {
+      fill: #ED8323; }
+    .search-filter .wrapper .active .icon_close {
+      display: block; }
+    .search-filter .wrapper .filters_content {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: flex;
+      width: 55%; }
+      .search-filter .wrapper .filters_content .types {
+        margin-left: auto;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: flex;
+        max-width: 310px;
+        width: 100%;
+        position: relative; }
+        .search-filter .wrapper .filters_content .types .typesr {
+          -webkit-align-items: center;
+          align-items: center;
+          padding: 2px 15px;
+          background: #FFFFFF;
+          border-radius: 100px;
+          height: 20px;
+          max-width: 220px;
+          width: 100%;
+          cursor: pointer;
+          display: none; }
+          .search-filter .wrapper .filters_content .types .typesr svg {
+            width: 18px;
+            height: 18px;
+            display: block; }
+          .search-filter .wrapper .filters_content .types .typesr span {
+            margin-left: 10px;
+            display: block;
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px; }
+          .search-filter .wrapper .filters_content .types .typesr .icon_close {
+            display: none;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            margin-right: 20px; }
+          .search-filter .wrapper .filters_content .types .typesr svg:last-child {
+            width: 10px;
+            height: 5px;
+            display: block;
+            margin-left: auto; }
+        .search-filter .wrapper .filters_content .types .types_items {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: flex;
+          -webkit-align-items: center;
+          align-items: center; }
+          .search-filter .wrapper .filters_content .types .types_items .type {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            padding: 2px 15px;
+            background: #FFFFFF;
+            border: 1px solid #D7E1E5;
+            border-radius: 100px;
+            height: 20px;
+            cursor: pointer;
+            margin-right: 10px; }
+            .search-filter .wrapper .filters_content .types .types_items .type .type_item_qurta {
+              display: none;
+              width: 16px;
+              height: 16px;
+              background: #FFFFFF;
+              border: 1px solid #D7E1E5;
+              border-radius: 2px;
+              margin-right: 12px; }
+            .search-filter .wrapper .filters_content .types .types_items .type .type_item_title {
+              font-family: "Poppins", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 11px;
+              line-height: 16px;
+              text-align: center;
+              color: #617589; }
+          .search-filter .wrapper .filters_content .types .types_items .active {
+            border: 1px solid #ED8322; }
+            .search-filter .wrapper .filters_content .types .types_items .active .type_item_title {
+              color: #ED8322; }
+      .search-filter .wrapper .filters_content .by_speaker {
+        position: relative;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center; }
+        .search-filter .wrapper .filters_content .by_speaker .speaker {
+          cursor: pointer;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: flex;
+          -webkit-align-items: center;
+          align-items: center;
+          padding: 2px 15px;
+          background: #FFFFFF;
+          border: 1px solid #D7E1E5;
+          border-radius: 100px;
+          height: 20px; }
+          .search-filter .wrapper .filters_content .by_speaker .speaker span {
+            display: block;
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 16px;
+            text-align: center;
+            color: #617589;
+            margin-right: 10px; }
+          .search-filter .wrapper .filters_content .by_speaker .speaker svg {
+            display: block;
+            width: 10px; }
+        .search-filter .wrapper .filters_content .by_speaker .popup_speaker {
+          display: none;
+          position: absolute;
+          left: 0;
+          top: 35px;
+          height: 255px;
+          width: 210px;
+          overflow: hidden;
+          overflow-y: scroll;
+          z-index: 3;
+          filter: drop-shadow(0px 14px 21px rgba(0, 0, 0, 0.13));
+          background: #FAFDFE;
+          border: 1px solid #DDEBEF;
+          border-radius: 2px; }
+          .search-filter .wrapper .filters_content .by_speaker .popup_speaker::-webkit-scrollbar {
+            width: 4px;
+            /* ширина для вертикального скролла */
+            background-color: #B8B8B8;
+            border: 1px solid #B8B8B8;
+            border-radius: 0 0 2px 0; }
+          .search-filter .wrapper .filters_content .by_speaker .popup_speaker::-webkit-scrollbar-thumb {
+            background-color: #FFFFFF;
+            border-radius: 100px;
+            height: 50px;
+            width: 2px; }
+          .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search {
+            height: 22px;
+            padding: 6px 10px;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            border-bottom: 1px solid #DDEBEF; }
+            .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search .popup_speaker_search_icon {
+              width: 18px;
+              height: 18px;
+              display: block;
+              margin-right: 10px; }
+            .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search .popup_speaker_search_input {
+              border: none;
+              height: 22px;
+              width: 90%;
+              font-family: "Poppins", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 22px;
+              color: #1A1A1A; }
+              .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search .popup_speaker_search_input::-webkit-input-placeholder {
+                font-family: "Poppins", sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #8E989B; }
+              .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search .popup_speaker_search_input::-moz-placeholder {
+                font-family: "Poppins", sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #8E989B; }
+              .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search .popup_speaker_search_input:-ms-input-placeholder {
+                font-family: "Poppins", sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #8E989B; }
+              .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search .popup_speaker_search_input:-webkit-autofill, .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search .popup_speaker_search_input:focus-visible, .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search .popup_speaker_search_input:-webkit-autofill:hover, .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search .popup_speaker_search_input:-webkit-autofill:focus, .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search .popup_speaker_search_input:-webkit-autofill:focus-visible, .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search .popup_speaker_search_input:-webkit-autofill, .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search .popup_speaker_search_input:-webkit-autofill:hover, .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search .popup_speaker_search_input:-webkit-autofill:focus, .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search .popup_speaker_search_input:-webkit-autofill, .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search .popup_speaker_search_input:-webkit-autofill:hover, .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_search .popup_speaker_search_input:-webkit-autofill:focus {
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                -webkit-text-fill-color: #1A1A1A;
+                -webkit-box-shadow: none;
+                transition: background-color 5000s ease-in-out 0s;
+                outline: none; }
+          .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_items .popup_speaker_item {
+            height: 22px;
+            padding: 6px 10px;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            cursor: pointer;
+            border-bottom: 1px solid #DDEBEF; }
+            .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_items .popup_speaker_item .popup_speaker_item_qurta {
+              width: 16px;
+              height: 16px;
+              background: #FFFFFF;
+              border: 1px solid #D7E1E5;
+              border-radius: 2px;
+              margin-right: 10px; }
+            .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_items .popup_speaker_item .popup_speaker_item_title {
+              font-family: "Poppins", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 22px;
+              color: #29292A; }
+          .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_items .popup_speaker_item:last-child {
+            border-bottom: none; }
+      .search-filter .wrapper .filters_content .speaker_active .speaker {
+        background: #DB6C08;
+        border: 1px solid #DB6C08; }
+        .search-filter .wrapper .filters_content .speaker_active .speaker span {
+          color: #FFFFFF; }
+        .search-filter .wrapper .filters_content .speaker_active .speaker svg {
+          transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          /* Для Firefox */
+          -ms-transform: rotate(180deg);
+          /* Для IE */
+          -webkit-transform: rotate(180deg);
+          /* Для Safari, Chrome, iOS */
+          -o-transform: rotate(180deg); }
+          .search-filter .wrapper .filters_content .speaker_active .speaker svg path {
+            fill: #FFFFFF; }
+      .search-filter .wrapper .filters_content .speaker_active .popup_speaker {
+        display: block; }
+      .search-filter .wrapper .filters_content .separator {
+        margin-left: 20px;
+        height: 100%;
+        width: 1px;
+        background-color: #EBEDEE;
+        margin-right: 20px; }
+      .search-filter .wrapper .filters_content .by_category {
+        position: relative;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        max-width: 220px;
+        width: 100%; }
+        .search-filter .wrapper .filters_content .by_category .category {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: flex;
+          -webkit-align-items: center;
+          align-items: center;
+          padding: 2px 15px;
+          background: #FFFFFF;
+          border-radius: 100px;
+          height: 20px;
+          max-width: 220px;
+          width: 100%;
+          cursor: pointer; }
+          .search-filter .wrapper .filters_content .by_category .category svg {
+            width: 18px;
+            height: 18px;
+            display: block; }
+          .search-filter .wrapper .filters_content .by_category .category span {
+            margin-left: 10px;
+            display: block;
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px; }
+          .search-filter .wrapper .filters_content .by_category .category .icon_close {
+            display: none;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            margin-right: 20px; }
+          .search-filter .wrapper .filters_content .by_category .category svg:last-child {
+            width: 10px;
+            height: 5px;
+            display: block;
+            margin-left: auto; }
+        .search-filter .wrapper .filters_content .by_category .popup_category {
+          display: none;
+          position: absolute;
+          left: 0;
+          top: 35px;
+          height: 255px;
+          width: 210px;
+          overflow: hidden;
+          overflow-y: scroll;
+          z-index: 3;
+          filter: drop-shadow(0px 14px 21px rgba(0, 0, 0, 0.13));
+          background: #FAFDFE;
+          border: 1px solid #DDEBEF;
+          border-radius: 2px; }
+          .search-filter .wrapper .filters_content .by_category .popup_category::-webkit-scrollbar {
+            width: 4px;
+            /* ширина для вертикального скролла */
+            background-color: #B8B8B8;
+            border: 1px solid #B8B8B8;
+            border-radius: 0 0 2px 0; }
+          .search-filter .wrapper .filters_content .by_category .popup_category::-webkit-scrollbar-thumb {
+            background-color: #FFFFFF;
+            border-radius: 100px;
+            height: 50px;
+            width: 2px; }
+          .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search {
+            height: 22px;
+            padding: 6px 10px;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            border-bottom: 1px solid #DDEBEF; }
+            .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search .popup_category_search_icon {
+              width: 18px;
+              height: 18px;
+              display: block;
+              margin-right: 10px; }
+            .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search .popup_category_search_input {
+              border: none;
+              height: 22px;
+              width: 90%;
+              font-family: "Poppins", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 22px;
+              color: #1A1A1A; }
+              .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search .popup_category_search_input::-webkit-input-placeholder {
+                font-family: "Poppins", sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #8E989B; }
+              .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search .popup_category_search_input::-moz-placeholder {
+                font-family: "Poppins", sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #8E989B; }
+              .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search .popup_category_search_input:-ms-input-placeholder {
+                font-family: "Poppins", sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #8E989B; }
+              .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search .popup_category_search_input:-webkit-autofill, .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search .popup_category_search_input:focus-visible, .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search .popup_category_search_input:-webkit-autofill:hover, .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search .popup_category_search_input:-webkit-autofill:focus, .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search .popup_category_search_input:-webkit-autofill:focus-visible, .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search .popup_category_search_input:-webkit-autofill, .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search .popup_category_search_input:-webkit-autofill:hover, .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search .popup_category_search_input:-webkit-autofill:focus, .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search .popup_category_search_input:-webkit-autofill, .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search .popup_category_search_input:-webkit-autofill:hover, .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_search .popup_category_search_input:-webkit-autofill:focus {
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                -webkit-text-fill-color: #1A1A1A;
+                -webkit-box-shadow: none;
+                transition: background-color 5000s ease-in-out 0s;
+                outline: none; }
+          .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_items .popup_category_item {
+            height: 22px;
+            padding: 6px 10px;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            cursor: pointer;
+            border-bottom: 1px solid #DDEBEF; }
+            .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_items .popup_category_item .popup_category_item_qurta {
+              width: 16px;
+              height: 16px;
+              background: #FFFFFF;
+              border: 1px solid #D7E1E5;
+              border-radius: 2px;
+              margin-right: 10px; }
+            .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_items .popup_category_item .popup_category_item_title {
+              font-family: "Poppins", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 22px;
+              color: #29292A; }
+          .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_items .popup_category_item:last-child {
+            border-bottom: none; }
+      .search-filter .wrapper .filters_content .speaker_active .category svg path {
+        fill: #ED8323; }
+      .search-filter .wrapper .filters_content .speaker_active .category svg:last-child {
+        transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        /* Для Firefox */
+        -ms-transform: rotate(180deg);
+        /* Для IE */
+        -webkit-transform: rotate(180deg);
+        /* Для Safari, Chrome, iOS */
+        -o-transform: rotate(180deg); }
+      .search-filter .wrapper .filters_content .speaker_active .popup_category {
+        display: block; }
+      .search-filter .wrapper .filters_content .select .category svg path {
+        fill: #ED8323; }
+      .search-filter .wrapper .filters_content .select .category svg:last-child {
+        margin-left: 0; }
+        .search-filter .wrapper .filters_content .select .category svg:last-child path {
+          fill: #B3C3CA; }
+      .search-filter .wrapper .filters_content .select .category .icon_close {
+        display: block;
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+        margin-left: auto; }
+      .search-filter .wrapper .filters_content .select .popup_category {
+        display: none; }
+    .search-filter .wrapper .button_filters {
+      display: none; }
+    @media (max-width: 1340px) {
+      .search-filter .wrapper .search {
+        width: 37%; }
+      .search-filter .wrapper .filters_content {
+        width: 63%; } }
+    @media (max-width: 1175px) {
+      .search-filter .wrapper {
+        background: #F5F8FA;
+        border: none; }
+        .search-filter .wrapper .search {
+          padding-top: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+          background: #FDFDFD;
+          border: 1px solid #DDEBEF;
+          border-radius: 100px;
+          margin-right: 0; }
+        .search-filter .wrapper .filters_content {
+          display: none; }
+        .search-filter .wrapper .button_filters {
+          padding: 8px;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: flex;
+          -webkit-align-items: center;
+          align-items: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          cursor: pointer;
+          background: #FDFDFD;
+          border: 1px solid #DDEBEF;
+          border-radius: 10px;
+          display: block;
+          margin-left: 10px; }
+          .search-filter .wrapper .button_filters svg {
+            display: block;
+            width: 18px;
+            height: 18px; } }

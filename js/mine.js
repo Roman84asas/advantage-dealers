@@ -7,6 +7,10 @@
         })
     }
 
+    function togglePopupFilter(element, classFilter) {
+        element.classList.toggle(classFilter);
+    }
+
     if(document.querySelector('.menu-mobile')) {
         toggleHeader(document.querySelector('.menu-mobile'));
     }
@@ -202,5 +206,29 @@
         });
     }
 
+    //Type filter
+    if(document.querySelectorAll('.type ')) {
+        document.querySelectorAll('.type ').forEach(function (element) {
+            element.addEventListener('click', function () {
+                document.querySelectorAll('.type ').forEach(function (el) {
+                    el.classList.remove('active');
+                })
+                element.classList.add('active');
+            })
+        })
+    }
 
+    //Speaker filter
+    if(document.querySelector('.speaker ')) {
+        document.querySelector('.speaker ').addEventListener('click', function () {
+            togglePopupFilter(document.querySelector('.by_speaker '), 'speaker_active');
+        })
+    }
+
+    //Speaker filter
+    if(document.querySelector('.category ')) {
+        document.querySelector('.category ').addEventListener('click', function () {
+            togglePopupFilter(document.querySelector('.by_category '), 'speaker_active');
+        })
+    }
 })();

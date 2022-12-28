@@ -36,6 +36,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\advantage-dealers\images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\advantage-dealers\images" />
       <recent name="C:\Users\User\Desktop\advantage-dealers" />
@@ -52,7 +55,7 @@
       <workItem from="1671987092496" duration="3406000" />
       <workItem from="1672050284037" duration="22215000" />
       <workItem from="1672128674755" duration="30476000" />
-      <workItem from="1672220864701" duration="5960000" />
+      <workItem from="1672220864701" duration="21832000" />
     </task>
     <servers />
   </component>
