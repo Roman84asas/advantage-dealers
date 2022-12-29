@@ -633,6 +633,9 @@
         .filters_content {
             @include dsp-flex;
             width: 55%;
+            .span-over {
+                display: none;
+            }
             .top_filter {
                 display: none;
             }
@@ -1149,6 +1152,9 @@
                     display: block;
                 }
             }
+            .bottom_filter {
+                display: none;
+            }
         }
         .button_filters {
             display: none;
@@ -1234,6 +1240,7 @@
                     .types {
                         max-width: 335px;
                         width: 100%;
+                        height: 34px;
                         @include margin-left-right-auto;
                         background: #FAFDFE;
                         border: 1px solid #DDEBEF;
@@ -1260,6 +1267,46 @@
                             height: 5px;
                             display: block;
                             margin-left: auto;
+                        }
+                    }
+                    .select {
+                        padding-left: 25px;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            width: 18px;
+                            height: 18px;
+                            background-image: url("../images/Check.svg");
+                            background-repeat: no-repeat;
+                            top: 10px;
+                            left: 5px;
+                        }
+                        position: relative;
+                        .span-over {
+                            display: block;
+                            position: absolute;
+                            top: -9px;
+                            left: 5px;
+                            background: #FFFFFF;
+                            padding: 1px 5px;
+                            font-size: 12px;
+                            line-height: 12px;
+                            color: #617589;
+                        }
+                        svg {
+                            display: none;
+                        }
+                        svg:last-child {
+                            width: 10px;
+                            height: 5px;
+                            display: block;
+                            margin-left: auto;
+                        }
+                        span {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #1A1A1A;
                         }
                     }
                     .types_items {
@@ -1331,6 +1378,7 @@
                         margin-top: 20px;
                         max-width: 335px;
                         width: 100%;
+                        height: 34px;
                         @include margin-left-right-auto;
                         background: #FAFDFE;
                         border: 1px solid #DDEBEF;
@@ -1359,6 +1407,46 @@
                             margin-left: auto;
                         }
                     }
+                    .select {
+                        padding-left: 25px;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            width: 18px;
+                            height: 18px;
+                            background-image: url("../images/Check.svg");
+                            background-repeat: no-repeat;
+                            top: 10px;
+                            left: 5px;
+                        }
+                        position: relative;
+                        .span-over {
+                            display: block;
+                            position: absolute;
+                            top: -9px;
+                            left: 5px;
+                            background: #FFFFFF;
+                            padding: 1px 5px;
+                            font-size: 12px;
+                            line-height: 12px;
+                            color: #617589;
+                        }
+                        svg {
+                            display: none;
+                        }
+                        svg:last-child {
+                            width: 10px;
+                            height: 5px;
+                            display: block;
+                            margin-left: auto;
+                        }
+                        span {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #1A1A1A;
+                        }
+                    }
                     .popup_speaker {
                         top: 45px;
                     }
@@ -1371,6 +1459,7 @@
                         margin-top: 20px;
                         max-width: 335px;
                         width: 100%;
+                        height: 34px;
                         @include margin-left-right-auto;
                         background: #FAFDFE;
                         border: 1px solid #DDEBEF;
@@ -1404,6 +1493,46 @@
                             height: 20px;
                             cursor: pointer;
                             margin-right: 20px;
+                        }
+                    }
+                    .select {
+                        padding-left: 25px;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            width: 18px;
+                            height: 18px;
+                            background-image: url("../images/Check.svg");
+                            background-repeat: no-repeat;
+                            top: 10px;
+                            left: 5px;
+                        }
+                        position: relative;
+                        .span-over {
+                            display: block;
+                            position: absolute;
+                            top: -9px;
+                            left: 5px;
+                            background: #FFFFFF;
+                            padding: 1px 5px;
+                            font-size: 12px;
+                            line-height: 12px;
+                            color: #617589;
+                        }
+                        svg {
+                            display: none;
+                        }
+                        svg:last-child {
+                            width: 10px;
+                            height: 5px;
+                            display: block;
+                            margin-left: auto;
+                        }
+                        span {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #1A1A1A;
                         }
                     }
                     .popup_category {

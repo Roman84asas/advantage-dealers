@@ -695,6 +695,8 @@ html {
       display: -ms-flex;
       display: flex;
       width: 55%; }
+      .search-filter .wrapper .filters_content .span-over {
+        display: none; }
       .search-filter .wrapper .filters_content .top_filter {
         display: none; }
       .search-filter .wrapper .filters_content .typesr {
@@ -1151,6 +1153,8 @@ html {
         -o-transform: rotate(180deg); }
       .search-filter .wrapper .filters_content .speaker_active .popup_category {
         display: block; }
+      .search-filter .wrapper .filters_content .bottom_filter {
+        display: none; }
     .search-filter .wrapper .button_filters {
       display: none; }
     @media (max-width: 1340px) {
@@ -1241,6 +1245,7 @@ html {
             .search-filter .wrapper .filters_active .typesr .types {
               max-width: 335px;
               width: 100%;
+              height: 34px;
               margin-left: auto;
               margin-right: auto;
               background: #FAFDFE;
@@ -1270,6 +1275,40 @@ html {
                 height: 5px;
                 display: block;
                 margin-left: auto; }
+            .search-filter .wrapper .filters_active .typesr .select {
+              padding-left: 25px;
+              position: relative; }
+              .search-filter .wrapper .filters_active .typesr .select:before {
+                content: '';
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                background-image: url("../images/Check.svg");
+                background-repeat: no-repeat;
+                top: 10px;
+                left: 5px; }
+              .search-filter .wrapper .filters_active .typesr .select .span-over {
+                display: block;
+                position: absolute;
+                top: -9px;
+                left: 5px;
+                background: #FFFFFF;
+                padding: 1px 5px;
+                font-size: 12px;
+                line-height: 12px;
+                color: #617589; }
+              .search-filter .wrapper .filters_active .typesr .select svg {
+                display: none; }
+              .search-filter .wrapper .filters_active .typesr .select svg:last-child {
+                width: 10px;
+                height: 5px;
+                display: block;
+                margin-left: auto; }
+              .search-filter .wrapper .filters_active .typesr .select span {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                color: #1A1A1A; }
             .search-filter .wrapper .filters_active .typesr .types_items {
               display: none;
               position: absolute;
@@ -1334,6 +1373,7 @@ html {
               margin-top: 20px;
               max-width: 335px;
               width: 100%;
+              height: 34px;
               margin-left: auto;
               margin-right: auto;
               background: #FAFDFE;
@@ -1363,6 +1403,40 @@ html {
                 height: 5px;
                 display: block;
                 margin-left: auto; }
+            .search-filter .wrapper .filters_active .by_speaker .select {
+              padding-left: 25px;
+              position: relative; }
+              .search-filter .wrapper .filters_active .by_speaker .select:before {
+                content: '';
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                background-image: url("../images/Check.svg");
+                background-repeat: no-repeat;
+                top: 10px;
+                left: 5px; }
+              .search-filter .wrapper .filters_active .by_speaker .select .span-over {
+                display: block;
+                position: absolute;
+                top: -9px;
+                left: 5px;
+                background: #FFFFFF;
+                padding: 1px 5px;
+                font-size: 12px;
+                line-height: 12px;
+                color: #617589; }
+              .search-filter .wrapper .filters_active .by_speaker .select svg {
+                display: none; }
+              .search-filter .wrapper .filters_active .by_speaker .select svg:last-child {
+                width: 10px;
+                height: 5px;
+                display: block;
+                margin-left: auto; }
+              .search-filter .wrapper .filters_active .by_speaker .select span {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                color: #1A1A1A; }
             .search-filter .wrapper .filters_active .by_speaker .popup_speaker {
               top: 45px; }
           .search-filter .wrapper .filters_active .by_category {
@@ -1374,6 +1448,7 @@ html {
               margin-top: 20px;
               max-width: 335px;
               width: 100%;
+              height: 34px;
               margin-left: auto;
               margin-right: auto;
               background: #FAFDFE;
@@ -1409,6 +1484,40 @@ html {
                 height: 20px;
                 cursor: pointer;
                 margin-right: 20px; }
+            .search-filter .wrapper .filters_active .by_category .select {
+              padding-left: 25px;
+              position: relative; }
+              .search-filter .wrapper .filters_active .by_category .select:before {
+                content: '';
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                background-image: url("../images/Check.svg");
+                background-repeat: no-repeat;
+                top: 10px;
+                left: 5px; }
+              .search-filter .wrapper .filters_active .by_category .select .span-over {
+                display: block;
+                position: absolute;
+                top: -9px;
+                left: 5px;
+                background: #FFFFFF;
+                padding: 1px 5px;
+                font-size: 12px;
+                line-height: 12px;
+                color: #617589; }
+              .search-filter .wrapper .filters_active .by_category .select svg {
+                display: none; }
+              .search-filter .wrapper .filters_active .by_category .select svg:last-child {
+                width: 10px;
+                height: 5px;
+                display: block;
+                margin-left: auto; }
+              .search-filter .wrapper .filters_active .by_category .select span {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                color: #1A1A1A; }
             .search-filter .wrapper .filters_active .by_category .popup_category {
               top: 45px; }
           .search-filter .wrapper .filters_active .types_active .typesr {
