@@ -256,6 +256,14 @@
         })
     }
 
+    if(document.querySelector('.types ')) {
+        document.querySelector('.types ').addEventListener('click', function () {
+            togglePopupFilter(document.querySelector('.typesr '), 'types_active');
+        })
+    }
+
+    selectPopupValue(document.querySelectorAll('.type '), 'types', 'select');
+
     //Speaker filter and options
     if(document.querySelector('.speaker ')) {
         document.querySelector('.speaker ').addEventListener('click', function () {
@@ -292,4 +300,27 @@
 
     selectSearchPopupValue(document.querySelector('.popup_category_search_input'), document.querySelectorAll('.popup_category_item'));
 
+    if(document.querySelector('.button_filters')) {
+        document.querySelector('.button_filters').addEventListener('click', function () {
+            document.querySelector('.filters_content').classList.toggle('filters_active');
+        })
+    }
+
+    if(document.querySelector('.top_filter_close')) {
+        document.querySelector('.top_filter_close').addEventListener('click', function () {
+            document.querySelector('.filters_content').classList.toggle('filters_active');
+        })
+    }
+
+    if(document.querySelector('.cancel')) {
+        document.querySelector('.cancel').addEventListener('click', function () {
+            document.querySelector('.filters_content').classList.toggle('filters_active');
+        })
+    }
+
+    if(document.querySelector('.confirm')) {
+        document.querySelector('.confirm').addEventListener('click', function () {
+            console.log('confirm');
+        })
+    }
 })();
