@@ -11,6 +11,44 @@
         element.classList.toggle(classFilter);
     }
 
+    function selectPopupValue(element, classFilter, classSelect) {
+        if(element) {
+            element.forEach(function (element) {
+                element.addEventListener('click', function () {
+                    document.querySelector('#'+classFilter).innerHTML = element.getAttribute('data-name');
+                    document.querySelector('.'+classFilter ).classList.add(classSelect);
+                    element.classList.add('active');
+                })
+            })
+        }
+    }
+
+    function selectSearchPopupValue(elementSearch, elementSelect) {
+        if(elementSearch) {
+            elementSearch.addEventListener('input', function () {
+                if(elementSearch.value.length > 0) {
+                    elementSelect.forEach(function (element) {
+                        let valueDrop = element.getAttribute('data-name').toLowerCase();
+                        element.style.display = 'none';
+                        if( valueDrop.substring(0, elementSearch.value.length) ===  elementSearch.value.toLowerCase()) {
+                            element.style.display = 'flex';
+                            element.addEventListener('click', function () {
+                                elementSearch.value = '';
+                                elementSelect.forEach(function (el) {
+                                    el.style.display = 'flex';
+                                });
+                            });
+                        }
+                    });
+                } else {
+            elementSelect.forEach(function (element) {
+                        element.style.display = 'flex';
+                    });
+                }
+            })
+        }
+    }
+
     if(document.querySelector('.menu-mobile')) {
         toggleHeader(document.querySelector('.menu-mobile'));
     }
@@ -218,28 +256,40 @@
         })
     }
 
-    //Speaker filter
+    //Speaker filter and options
     if(document.querySelector('.speaker ')) {
         document.querySelector('.speaker ').addEventListener('click', function () {
             togglePopupFilter(document.querySelector('.by_speaker '), 'speaker_active');
         })
     }
 
-    if(document.querySelectorAll('.popup_speaker_item ')) {
-        document.querySelectorAll('.popup_speaker_item ').forEach(function (element) {
-            element.addEventListener('click', function () {
-                document.querySelector('#speaker').innerHTML = element.getAttribute('data-name');
-                document.querySelector('.speaker').classList.add('select');
-                element.classList.add('active');
-            })
-        })
-    }
+    selectPopupValue(document.querySelectorAll('.popup_speaker_item '), 'speaker', 'select');
 
+    selectSearchPopupValue(document.querySelector('.popup_speaker_search_input'), document.querySelectorAll('.popup_speaker_item'));
 
-    //Speaker filter
+    //Speaker filter and options
     if(document.querySelector('.category ')) {
         document.querySelector('.category ').addEventListener('click', function () {
             togglePopupFilter(document.querySelector('.by_category '), 'speaker_active');
         })
     }
+
+    selectPopupValue(document.querySelectorAll('.popup_category_item '), 'category', 'select');
+
+    if(document.querySelectorAll('.icon_close ')) {
+        document.querySelectorAll('.icon_close ').forEach(function (element) {
+            element.addEventListener('click', function () {
+                document.querySelector('.'+element.getAttribute('data-name')).classList.remove('select');
+                document.querySelector('#'+element.getAttribute('data-name')).innerHTML = element.getAttribute('data-default');
+
+                document.querySelectorAll('.popup_category_item').forEach(function (el) {
+                    el.classList.remove('active');
+                })
+            })
+        })
+
+    }
+
+    selectSearchPopupValue(document.querySelector('.popup_category_search_input'), document.querySelectorAll('.popup_category_item'));
+
 })();
