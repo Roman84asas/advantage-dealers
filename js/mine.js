@@ -225,6 +225,17 @@
         })
     }
 
+    if(document.querySelectorAll('.popup_speaker_item ')) {
+        document.querySelectorAll('.popup_speaker_item ').forEach(function (element) {
+            element.addEventListener('click', function () {
+                document.querySelector('#speaker').innerHTML = element.getAttribute('data-name');
+                document.querySelector('.speaker').classList.add('select');
+                element.classList.add('active');
+            })
+        })
+    }
+
+
     //Speaker filter
     if(document.querySelector('.category ')) {
         document.querySelector('.category ').addEventListener('click', function () {

@@ -813,6 +813,8 @@ html {
           .search-filter .wrapper .filters_content .by_speaker .speaker svg {
             display: block;
             width: 10px; }
+        .search-filter .wrapper .filters_content .by_speaker .select span {
+          color: #1A1A1A; }
         .search-filter .wrapper .filters_content .by_speaker .popup_speaker {
           display: none;
           position: absolute;
@@ -920,6 +922,17 @@ html {
               color: #29292A; }
           .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_items .popup_speaker_item:last-child {
             border-bottom: none; }
+          .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_items .active .popup_speaker_item_qurta {
+            position: relative; }
+            .search-filter .wrapper .filters_content .by_speaker .popup_speaker .popup_speaker_items .active .popup_speaker_item_qurta:after {
+              position: absolute;
+              content: '';
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background-color: #ED8323;
+              left: 3px;
+              top: 3px; }
       .search-filter .wrapper .filters_content .speaker_active .speaker {
         background: #DB6C08;
         border: 1px solid #DB6C08; }
@@ -1098,6 +1111,17 @@ html {
               color: #29292A; }
           .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_items .popup_category_item:last-child {
             border-bottom: none; }
+          .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_items .active .popup_category_item_qurta {
+            position: relative; }
+            .search-filter .wrapper .filters_content .by_category .popup_category .popup_category_items .active .popup_category_item_qurta:after {
+              position: absolute;
+              content: '';
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background-color: #ED8323;
+              left: 3px;
+              top: 3px; }
       .search-filter .wrapper .filters_content .speaker_active .category svg path {
         fill: #ED8323; }
       .search-filter .wrapper .filters_content .speaker_active .category svg:last-child {

@@ -746,6 +746,11 @@
                         width: 10px;
                     }
                 }
+                .select {
+                    span {
+                        color: $fonts;
+                    }
+                }
                 .popup_speaker {
                     display: none;
                     position: absolute;
@@ -867,6 +872,21 @@
                         }
                         .popup_speaker_item:last-child {
                             border-bottom: none;
+                        }
+                        .active {
+                            .popup_speaker_item_qurta {
+                                position: relative;
+                                &:after {
+                                    position: absolute;
+                                    content: '';
+                                    width: 10px;
+                                    height: 10px;
+                                    border-radius: 50%;
+                                    background-color: $yellow;
+                                    left: 3px;
+                                    top: 3px;
+                                }
+                            }
                         }
                     }
                 }
@@ -1065,6 +1085,21 @@
                         }
                         .popup_category_item:last-child {
                             border-bottom: none;
+                        }
+                        .active {
+                            .popup_category_item_qurta {
+                                position: relative;
+                                &:after {
+                                    position: absolute;
+                                    content: '';
+                                    width: 10px;
+                                    height: 10px;
+                                    border-radius: 50%;
+                                    background-color: $yellow;
+                                    left: 3px;
+                                    top: 3px;
+                                }
+                            }
                         }
                     }
                 }
