@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="libs/Swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/video.css" rel="stylesheet">
+</head>
+<body>
+<!--Header section-->
+<header>
+    <div class="top_header">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.4251 31.188C25.9094 31.188 32.7771 24.2035 32.7771 15.594C32.7771 6.98455 25.901 0 17.4251 0C8.94928 0 2.07312 6.97605 2.07312 15.594C2.07312 24.212 8.94928 31.188 17.4251 31.188Z" fill="white"/>
+            <path d="M2.07318 15.594C2.07318 6.97605 8.94096 0 17.4252 0C22.5844 0 27.149 2.58624 29.938 6.55919L26.4036 19.652L26.2947 6.54217H23.5141L19.7535 19.652L19.8624 6.54217H16.7552L17.2996 26.509H20.0802L23.891 13.901L24.2176 26.509H26.9982L31.8894 10.3535C32.4673 11.9954 32.7772 13.7564 32.7772 15.594C32.7772 24.212 25.901 31.188 17.4252 31.188C13.1538 31.188 9.29273 29.41 6.50373 26.56C7.00626 26.7472 7.59253 26.8493 8.23743 26.8493C11.0934 26.8493 13.3548 24.8841 13.7903 21.7874C14.1421 19.048 12.8355 17.338 11.0934 15.3133C9.62774 13.5948 8.63945 12.4633 8.85721 10.915C8.99121 9.89408 9.59424 9.06035 10.683 9.06035C11.7718 9.06035 12.1822 9.78348 11.8807 11.7997L11.7467 12.9057H14.7702L14.9377 11.6296C15.457 7.89484 13.9578 6.21038 11.1018 6.21038C7.77679 6.21038 6.06822 8.50737 5.70808 11.0511C5.33119 13.901 6.822 15.7216 8.23743 17.3295C9.67799 18.9289 10.8757 20.1795 10.6077 22.0341C10.415 23.5229 9.49373 23.9397 8.6227 23.9397C7.34127 23.9397 6.93088 23.055 7.15701 21.5066L7.3999 19.6776H4.3764L4.10001 21.7534C4.02463 22.2978 4.01626 22.8083 4.06651 23.2932C2.79346 21.0217 2.0648 18.3929 2.0648 15.594H2.07318ZM34 19.6776C33.8492 20.3667 33.665 21.0557 33.4305 21.7363C30.3065 30.7542 20.5743 35.4928 11.6881 32.3195C2.81021 29.1378 -1.85486 19.2522 1.26914 10.2344C1.50365 9.55378 1.78004 8.89871 2.08993 8.26917C1.66278 9.07737 1.28589 9.9196 0.976006 10.8129C-2.16475 19.8817 2.52545 29.8183 11.4452 33.0086C20.3733 36.1989 30.1557 31.4347 33.2965 22.3744C33.6064 21.4811 33.8409 20.5793 34 19.6776Z" fill="#ED8322"/>
+        </svg>
+        <img src="images/menu.svg" alt="menu" class="menu-mobile">
+        <img src="images/close-menu.svg" alt="menu" class="menu-close">
+    </div>
+    <ul class="menu">
+        <li class="active">
+            <a href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 17.0001V11.4521V11.4514C20 10.9176 20 10.6505 19.9351 10.402C19.8775 10.1816 19.7827 9.97268 19.6548 9.78425C19.5104 9.57162 19.3096 9.39574 18.9074 9.04387L14.1074 4.84387C13.3608 4.19059 12.9875 3.86399 12.5674 3.73975C12.1972 3.63027 11.8028 3.63027 11.4326 3.73975C11.0127 3.86392 10.6398 4.19023 9.894 4.8428L9.89278 4.84387L5.09277 9.04387L5.09182 9.04471C4.69032 9.39602 4.48944 9.57179 4.34521 9.78425C4.2173 9.97268 4.12255 10.1816 4.06497 10.402C4 10.6506 4 10.9178 4 11.4521V17.0001C4 17.932 4 18.3978 4.15224 18.7654C4.35523 19.2554 4.74481 19.6448 5.23486 19.8478C5.60241 20 6.06835 20 7.00023 20C7.93211 20 8.39782 20 8.76537 19.8478C9.25542 19.6448 9.64467 19.2554 9.84766 18.7654C9.9999 18.3978 10 17.9319 10 17V16C10 14.8954 10.8954 14 12 14C13.1046 14 14 14.8954 14 16V17C14 17.9319 14 18.3978 14.1522 18.7654C14.3552 19.2554 14.7448 19.6448 15.2349 19.8478C15.6024 20 16.0683 20 17.0002 20C17.9321 20 18.3978 20 18.7654 19.8478C19.2554 19.6448 19.6447 19.2554 19.8477 18.7654C19.9999 18.3978 20 17.932 20 17.0001Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        <li class="parent_recruiting">
+            <a href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 19C15 16.7909 12.3137 15 9 15C5.68629 15 3 16.7909 3 19M16.8281 5.17163C17.1996 5.54307 17.4942 5.98402 17.6952 6.46932C17.8962 6.95463 17.9998 7.47468 17.9998 7.99997C17.9998 8.52526 17.8963 9.04543 17.6953 9.53073C17.4943 10.016 17.1996 10.457 16.8281 10.8285M19 3C19.6566 3.65661 20.1775 4.43612 20.5328 5.29402C20.8882 6.15192 21.071 7.07134 21.071 7.99992C21.071 8.92851 20.8881 9.84808 20.5327 10.706C20.1774 11.5639 19.6566 12.3435 19 13.0001M9 12C6.79086 12 5 10.2091 5 8C5 5.79086 6.79086 4 9 4C11.2091 4 13 5.79086 13 8C13 10.2091 11.2091 12 9 12Z" stroke="#BFC6C8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Recruiting</span>
+            </a>
+            <ul class="children">
+                <li class="">
+                    <a href="#">
+                        <span>Advanced Sales</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Alumini Letters</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Campus Presentations</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Delivery School</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>First Year’s Stuff</span>
+                    </a>
+                </li>
+                <li class="parent">
+                    <a href="#">
+                        <span>Leadership</span>
+                    </a>
+                    <ul class="children">
+                        <li class="">
+                            <a href="#">
+                                <span>Advanced Sales</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Alumini Letters</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Campus Presentations</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Delivery School</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>First Year’s Stuff</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Life Skills</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Meetings</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Motivation</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Product Knowledge</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Sales tools</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Share the Advantage</span>
+                    </a>
+                </li>
+                <li class="parent">
+                    <a href="#">
+                        <span>Summer Prep</span>
+                    </a>
+                    <ul class="children">
+                        <li class="">
+                            <a href="#">
+                                <span>Advanced Sales</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Alumini Letters</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Campus Presentations</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="parent_selling">
+            <a href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 21V5M20 15.6867V4.31323C14.1818 8.8626 9.81818 -0.23608 4 4.31329V15.6867C9.81818 11.1373 14.1818 20.236 20 15.6867Z" stroke="#BFC6C8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Selling</span>
+            </a>
+            <ul class="children">
+                <li class="">
+                    <a href="#">
+                        <span>Advanced Sales</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Alumini Letters</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Campus Presentations</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Delivery School</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>First Year’s Stuff</span>
+                    </a>
+                </li>
+                <li class="parent">
+                    <a href="#">
+                        <span>Leadership</span>
+                    </a>
+                    <ul class="children">
+                        <li class="">
+                            <a href="#">
+                                <span>Advanced Sales</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Alumini Letters</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Campus Presentations</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Delivery School</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>First Year’s Stuff</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Life Skills</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Meetings</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Motivation</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Product Knowledge</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Sales tools</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Share the Advantage</span>
+                    </a>
+                </li>
+                <li class="parent">
+                    <a href="#">
+                        <span>Summer Prep</span>
+                    </a>
+                    <ul class="children">
+                        <li class="">
+                            <a href="#">
+                                <span>Advanced Sales</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Alumini Letters</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Campus Presentations</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="parent_training">
+            <a href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 6V21M15 6L21 3V18L15 21M15 6L9 3M15 21L9 18M9 18L3 21V6L9 3M9 18V3" stroke="#BFC6C8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Training</span>
+            </a>
+            <ul class="children">
+                <li class="">
+                    <a href="#">
+                        <span>Advanced Sales</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Alumini Letters</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Campus Presentations</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Delivery School</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>First Year’s Stuff</span>
+                    </a>
+                </li>
+                <li class="parent">
+                    <a href="#">
+                        <span>Leadership</span>
+                    </a>
+                    <ul class="children">
+                        <li class="">
+                            <a href="#">
+                                <span>Advanced Sales</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Alumini Letters</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Campus Presentations</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Delivery School</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>First Year’s Stuff</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Life Skills</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Meetings</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Motivation</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Product Knowledge</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Sales tools</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Share the Advantage</span>
+                    </a>
+                </li>
+                <li class="parent">
+                    <a href="#">
+                        <span>Summer Prep</span>
+                    </a>
+                    <ul class="children">
+                        <li class="">
+                            <a href="#">
+                                <span>Advanced Sales</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Alumini Letters</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Campus Presentations</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="parent_added">
+            <a href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.0002 20H6.2002C5.08009 20 4.51962 20 4.0918 19.782C3.71547 19.5902 3.40973 19.2844 3.21799 18.908C3 18.4802 3 17.9201 3 16.8V5M21 7L15.1543 12.115C14.4542 12.7275 14.1041 13.0339 13.7207 13.161C13.2685 13.311 12.7775 13.2946 12.3363 13.1149C11.9623 12.9625 11.6336 12.6337 10.9758 11.9759C10.3323 11.3324 10.0105 11.0106 9.64355 10.8584C9.21071 10.6788 8.72875 10.6569 8.28142 10.7965C7.90221 10.9149 7.55252 11.2062 6.8534 11.7888L3 15" stroke="#BFC6C8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Value added</span>
+            </a>
+            <ul class="children">
+                <li class="">
+                    <a href="#">
+                        <span>Advanced Sales</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Alumini Letters</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Campus Presentations</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Delivery School</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>First Year’s Stuff</span>
+                    </a>
+                </li>
+                <li class="parent">
+                    <a href="#">
+                        <span>Leadership</span>
+                    </a>
+                    <ul class="children">
+                        <li class="">
+                            <a href="#">
+                                <span>Advanced Sales</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Alumini Letters</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Campus Presentations</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Delivery School</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>First Year’s Stuff</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Life Skills</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Meetings</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Motivation</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Product Knowledge</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Sales tools</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Share the Advantage</span>
+                    </a>
+                </li>
+                <li class="parent">
+                    <a href="#">
+                        <span>Summer Prep</span>
+                    </a>
+                    <ul class="children">
+                        <li class="">
+                            <a href="#">
+                                <span>Advanced Sales</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Alumini Letters</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Campus Presentations</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="parent_materials">
+            <a href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 11V19.4C3 19.9601 3 20.2401 3.10899 20.454C3.20487 20.6422 3.35774 20.7951 3.5459 20.891C3.75981 21 4.03956 21 4.59961 21H15.3996C15.9597 21 16.2405 21 16.4544 20.891C16.6425 20.7951 16.7948 20.6422 16.8906 20.454C16.9996 20.2401 16.9996 19.9601 16.9996 19.4V12.6C16.9996 12.04 16.9996 11.7599 16.8906 11.546C16.7948 11.3579 16.6425 11.2049 16.4544 11.109C16.2405 11 15.9601 11 15.4 11H3ZM3 11V10.6C3 10.0399 3 9.75993 3.10899 9.54602C3.20487 9.35786 3.35774 9.20487 3.5459 9.10899C3.75981 9 4.03956 9 4.59961 9H7.66152C7.9487 9 8.09288 9 8.22511 9.03701C8.34224 9.0698 8.45201 9.12365 8.5498 9.19598C8.66021 9.27764 8.74849 9.39099 8.9248 9.61768L9.99993 11M17 15H19.4C19.9601 15 20.2405 15 20.4544 14.891C20.6425 14.7951 20.7948 14.6422 20.8906 14.454C20.9996 14.2401 20.9996 13.9601 20.9996 13.4V6.60001C20.9996 6.03996 20.9996 5.75993 20.8906 5.54602C20.7948 5.35786 20.6425 5.20487 20.4544 5.10899C20.2405 5 19.9601 5 19.4 5H7M7 5V9M7 5V4.59998C7 4.03992 7 3.75993 7.10899 3.54602C7.20487 3.35786 7.35774 3.20487 7.5459 3.10899C7.75981 3 8.03956 3 8.59961 3H11.6615C11.9487 3 12.0929 3 12.2251 3.03701C12.3422 3.0698 12.452 3.12365 12.5498 3.19598C12.6602 3.27764 12.7485 3.39099 12.9248 3.61768L13.9999 4.99998" stroke="#BFC6C8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Additional materials</span>
+            </a>
+            <ul class="children">
+                <li class="">
+                    <a href="#">
+                        <span>Advanced Sales</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Alumini Letters</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Campus Presentations</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Delivery School</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>First Year’s Stuff</span>
+                    </a>
+                </li>
+                <li class="parent">
+                    <a href="#">
+                        <span>Leadership</span>
+                    </a>
+                    <ul class="children">
+                        <li class="">
+                            <a href="#">
+                                <span>Advanced Sales</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Alumini Letters</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Campus Presentations</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Delivery School</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>First Year’s Stuff</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Life Skills</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Meetings</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Motivation</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Product Knowledge</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Sales tools</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <span>Share the Advantage</span>
+                    </a>
+                </li>
+                <li class="parent">
+                    <a href="#">
+                        <span>Summer Prep</span>
+                    </a>
+                    <ul class="children">
+                        <li class="">
+                            <a href="#">
+                                <span>Advanced Sales</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Alumini Letters</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span>Campus Presentations</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="add_video_header"><span>Submit video</span></div>
+    <div class="account_header">Log in</div>
+</header>
+
+<!--All content width Footer-->
+<main class="content">
+    <!--Breadcrumbs section, add new video(pdf, article), account section-->
+    <section class="breadcrumbs-account">
+        <div class="wrapper">
+            <div class="breadcrumbs">
+                <a href="#" class="breadcrumbs_core">Selling</a>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 5L16 12L9 19" stroke="#617589" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="breadcrumbs_core active">Alumni Speaker – David Caldwell</div>
+            </div>
+
+            <div class="add_video"><span>Submit video</span></div>
+
+            <div class="account">
+                <div class="account_content">
+                    <a href="#" class="account_url">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17" cy="17" r="17" fill="#DDE0E1"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6322 12.7619C21.6322 15.4053 19.5717 17.5248 17 17.5248C14.4292 17.5248 12.3678 15.4053 12.3678 12.7619C12.3678 10.1186 14.4292 8 17 8C19.5717 8 21.6322 10.1186 21.6322 12.7619ZM17 26C13.2046 26 10 25.3655 10 22.9175C10 20.4685 13.2247 19.8565 17 19.8565C20.7963 19.8565 24 20.491 24 22.9391C24 25.388 20.7753 26 17 26Z" fill="#4D5E6F"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="account_popup">
+                    <a href="#" class="account_popup_item">Help</a>
+                    <a href="#" class="account_popup_item">Log in</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--!!!Post page. Start!!!-->
+
+    <!--Video section. Post page-->
+    <section class="video">
+        <div class="wrapper">
+            <video src="video/Alexandra%20Stan%20-%20Mr%20Saxobeat.mp4" width="400" height="300" controls id="video"></video>
+        </div>
+    </section>
+
+    <!--Audio section. Post page-->
+    <section class="audio">
+        <div class="wrapper">
+            <audio src="video/Trek.mp3" controls id="audio"></audio>
+        </div>
+    </section>
+
+    <!--Description and file section. Post page-->
+    <section class="post-description-file">
+        <div class="wrapper">
+            <div class="post-top">
+                <div class="post_title_author">
+                    <h2 class="post_title">Alumni Speaker – David Caldwell</h2>
+                    <div class="post_author">by Marry Longstone · Oct 31, 2022</div>
+                </div>
+                <a href="#" class="post_file" download>
+                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.99992 9L6.99992 14M6.99992 14L9.57131 12.3333M6.99992 14L4.42852 12.3333M13 6.5H10.6C9.63996 6.5 9.15956 6.49997 8.79286 6.31832C8.4703 6.15853 8.20824 5.90358 8.04389 5.58997C7.85705 5.23345 7.85705 4.76675 7.85705 3.83333V1.5M12.9998 13.8333V6.77125C12.9998 6.3636 12.9995 6.15974 12.9521 5.96793C12.9101 5.79787 12.841 5.63531 12.747 5.48619C12.641 5.318 12.4932 5.17387 12.1967 4.88562L9.51774 2.28105C9.22126 1.9928 9.073 1.84869 8.9 1.74562C8.74662 1.65423 8.57946 1.58688 8.40454 1.54605C8.20725 1.5 7.99753 1.5 7.57823 1.5H3.74299C2.78291 1.5 2.30251 1.5 1.93581 1.68166C1.61325 1.84144 1.3512 2.09643 1.18684 2.41003C1 2.76655 1 3.23326 1 4.16668V13.8333C1 14.7668 1 15.2335 1.18684 15.59C1.3512 15.9036 1.61325 16.1585 1.93581 16.3183C2.30251 16.5 2.78291 16.5 3.74299 16.5H10.2572C11.2173 16.5 11.697 16.5 12.0637 16.3183C12.3862 16.1585 12.6488 15.9036 12.8132 15.59C13 15.2335 12.9998 14.7668 12.9998 13.8333Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Download</span>
+                </a>
+            </div>
+            <div class="post_description">
+                Our early learning, homework help, and college prep resources help missions of kids get better grades,
+                save time, and feel excited about school. These products are marketed by college students and recent
+                graduates building their own businesses and gaining the tools they need for success in life.
+            </div>
+            <div class="post_tags">
+                <a href="#" class="post_tag">#Training</a>
+                <a href="#" class="post_tag">#Training</a>
+                <a href="#" class="post_tag">#Training</a>
+                <a href="#" class="post_tag">#Training</a>
+                <a href="#" class="post_tag">#Training</a>
+                <a href="#" class="post_tag">#Training</a>
+            </div>
+        </div>
+    </section>
+
+    <!--!!!Post page. Cancel!!!-->
+
+    <!--Slider content from Sections View all...-->
+    <section class="slider-small-block last-post">
+        <div class="wrapper">
+            <div class="slider-small-block_top">
+                <div class="slider-small-block_title_link">
+                    <div class="slider-small-block_title">Related posts</div>
+                </div>
+                <div class="slider-small-block_navigation">
+                    <div class="slider-small-button selling_left">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 19L8 12L15 5" stroke="#617589" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="slider-small-button selling_right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 5L16 12L9 19" stroke="#617589" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-small-block slider-small-block_selling_slider">
+                <div class="swiper-wrapper items">
+                    <div class="swiper-slide item">
+                        <div class="item_label">PDF</div>
+                        <div class="item_img"
+                             style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bg.png), #FFFFFF;"
+                             onmouseover="this.style.background ='linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('+'images/bg.png'+'), #FFFFFF';"
+                             onmouseout="this.style.background= 'linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('+'images/bg.png'+'), #FFFFFF';">
+                        </div>
+                        <a href="#" class="item_title">Alumni Speaker – David Caldwell</a>
+                        <div class="item_autor">by David Caldwell · Oct 31, 2022</div>
+                        <div class="item_tags">
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_label">PDF</div>
+                        <div class="item_img"
+                             style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bg.png), #FFFFFF;"
+                             onmouseover="this.style.background ='linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('+'images/bg.png'+'), #FFFFFF';"
+                             onmouseout="this.style.background= 'linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('+'images/bg.png'+'), #FFFFFF';">
+                        </div>
+                        <a href="#" class="item_title">Alumni Speaker – David Caldwell</a>
+                        <div class="item_autor">by David Caldwell · Oct 31, 2022</div>
+                        <div class="item_tags">
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_label">PDF</div>
+                        <div class="item_img"
+                             style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bg.png), #FFFFFF;"
+                             onmouseover="this.style.background ='linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('+'images/bg.png'+'), #FFFFFF';"
+                             onmouseout="this.style.background= 'linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('+'images/bg.png'+'), #FFFFFF';">
+                        </div>
+                        <a href="#" class="item_title">Alumni Speaker – David Caldwell</a>
+                        <div class="item_autor">by David Caldwell · Oct 31, 2022</div>
+                        <div class="item_tags">
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_label">PDF</div>
+                        <div class="item_img"
+                             style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bg.png), #FFFFFF;"
+                             onmouseover="this.style.background ='linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('+'images/bg.png'+'), #FFFFFF';"
+                             onmouseout="this.style.background= 'linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('+'images/bg.png'+'), #FFFFFF';">
+                        </div>
+                        <a href="#" class="item_title">Alumni Speaker – David Caldwell</a>
+                        <div class="item_autor">by David Caldwell · Oct 31, 2022</div>
+                        <div class="item_tags">
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_label">PDF</div>
+                        <div class="item_img"
+                             style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bg.png), #FFFFFF;"
+                             onmouseover="this.style.background ='linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('+'images/bg.png'+'), #FFFFFF';"
+                             onmouseout="this.style.background= 'linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('+'images/bg.png'+'), #FFFFFF';">
+                        </div>
+                        <a href="#" class="item_title">Alumni Speaker – David Caldwell</a>
+                        <div class="item_autor">by David Caldwell · Oct 31, 2022</div>
+                        <div class="item_tags">
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_label">PDF</div>
+                        <div class="item_img"
+                             style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bg.png), #FFFFFF;"
+                             onmouseover="this.style.background ='linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('+'images/bg.png'+'), #FFFFFF';"
+                             onmouseout="this.style.background= 'linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('+'images/bg.png'+'), #FFFFFF';">
+                        </div>
+                        <a href="#" class="item_title">Alumni Speaker – David Caldwell</a>
+                        <div class="item_autor">by David Caldwell · Oct 31, 2022</div>
+                        <div class="item_tags">
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_label">PDF</div>
+                        <div class="item_img"
+                             style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bg.png), #FFFFFF;"
+                             onmouseover="this.style.background ='linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('+'images/bg.png'+'), #FFFFFF';"
+                             onmouseout="this.style.background= 'linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('+'images/bg.png'+'), #FFFFFF';">
+                        </div>
+                        <a href="#" class="item_title">Alumni Speaker – David Caldwell</a>
+                        <div class="item_autor">by David Caldwell · Oct 31, 2022</div>
+                        <div class="item_tags">
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_label">PDF</div>
+                        <div class="item_img"
+                             style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bg.png), #FFFFFF;"
+                             onmouseover="this.style.background ='linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('+'images/bg.png'+'), #FFFFFF';"
+                             onmouseout="this.style.background= 'linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('+'images/bg.png'+'), #FFFFFF';">
+                        </div>
+                        <a href="#" class="item_title">Alumni Speaker – David Caldwell</a>
+                        <div class="item_autor">by David Caldwell · Oct 31, 2022</div>
+                        <div class="item_tags">
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_label">PDF</div>
+                        <div class="item_img"
+                             style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bg.png), #FFFFFF;"
+                             onmouseover="this.style.background ='linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('+'images/bg.png'+'), #FFFFFF';"
+                             onmouseout="this.style.background= 'linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('+'images/bg.png'+'), #FFFFFF';">
+                        </div>
+                        <a href="#" class="item_title">Alumni Speaker – David Caldwell</a>
+                        <div class="item_autor">by David Caldwell · Oct 31, 2022</div>
+                        <div class="item_tags">
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_label">PDF</div>
+                        <div class="item_img"
+                             style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bg.png), #FFFFFF;"
+                             onmouseover="this.style.background ='linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('+'images/bg.png'+'), #FFFFFF';"
+                             onmouseout="this.style.background= 'linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('+'images/bg.png'+'), #FFFFFF';">
+                        </div>
+                        <a href="#" class="item_title">Alumni Speaker – David Caldwell</a>
+                        <div class="item_autor">by David Caldwell · Oct 31, 2022</div>
+                        <div class="item_tags">
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                            <a href="#" class="item_tag">#Training</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer section-->
+    <footer>
+        <div class="wrapper">
+            <div class="logo-footer">
+                <svg width="180" height="41" viewBox="0 0 180 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_304_2143)">
+                        <path d="M21.0623 37.6754C31.2563 37.6754 39.5081 29.4292 39.5081 19.2646C39.5081 9.09996 31.2462 0.85376 21.0623 0.85376C10.8783 0.85376 2.61646 9.08992 2.61646 19.2646C2.61646 29.4393 10.8783 37.6754 21.0623 37.6754Z" fill="white"/>
+                        <path d="M2.61646 19.2646C2.61646 9.08992 10.8683 0.85376 21.0623 0.85376C27.2612 0.85376 32.7456 3.90717 36.0966 8.59776L31.85 24.0556L31.7192 8.57767H28.3782L23.8598 24.0556L23.9906 8.57767H20.2572L20.9113 32.1512H24.2523L28.831 17.2658L29.2235 32.1512H32.5645L38.4414 13.0774C39.1357 15.0159 39.5081 17.0951 39.5081 19.2646C39.5081 29.4393 31.2462 37.6754 21.0623 37.6754C15.93 37.6754 11.2909 35.5762 7.93988 32.2114C8.54367 32.4324 9.24809 32.5529 10.023 32.5529C13.4545 32.5529 16.1716 30.2327 16.6948 26.5767C17.1175 23.3425 15.5476 21.3236 13.4545 18.9331C11.6934 16.9042 10.506 15.5684 10.7676 13.7403C10.9286 12.535 11.6532 11.5507 12.9614 11.5507C14.2696 11.5507 14.7627 12.4045 14.4004 14.7849L14.2394 16.0907H17.8722L18.0735 14.584C18.6974 10.1747 16.8961 8.18595 13.4646 8.18595C9.46948 8.18595 7.41659 10.8979 6.98387 13.901C6.53103 17.2658 8.32228 19.4152 10.023 21.3136C11.7538 23.2019 13.1929 24.6784 12.8708 26.868C12.6394 28.6257 11.5324 29.1178 10.4859 29.1178C8.94619 29.1178 8.4531 28.0733 8.7248 26.2452L9.01664 24.0858H5.38383L5.05175 26.5365C4.96118 27.1793 4.95111 27.782 5.01149 28.3545C3.48189 25.6727 2.60639 22.5691 2.60639 19.2646H2.61646ZM40.9773 24.0858C40.7961 24.8993 40.5747 25.7129 40.293 26.5164C36.5394 37.1632 24.846 42.7577 14.169 39.0113C3.50202 35.2548 -2.10317 23.5835 1.65039 12.9368C1.93216 12.1333 2.26425 11.3599 2.63658 10.6166C2.12336 11.5708 1.67052 12.5652 1.29818 13.6198C-2.47551 24.3268 3.15987 36.0583 13.8771 39.8249C24.6045 43.5914 36.3583 37.9667 40.132 27.2697C40.5043 26.2151 40.7861 25.1504 40.9773 24.0858Z" fill="#ED8322"/>
+                        <path d="M54.9449 14.6041C56.2833 16.1308 57.2795 17.4164 57.0078 19.4855C56.6757 21.8157 54.9449 23.3023 52.7511 23.3023C50.5573 23.3023 49.2592 21.6952 49.5812 19.4654L49.7925 17.8985H52.1071L51.9159 19.2746C51.7448 20.4397 52.0567 21.1127 53.0429 21.1127C53.7071 21.1127 54.4216 20.8013 54.5725 19.6764C54.7839 18.2802 53.8581 17.3461 52.7511 16.1308C51.6643 14.9255 50.5171 13.5394 50.8089 11.4C51.0806 9.48159 52.3989 7.75401 54.9449 7.75401C57.1387 7.75401 58.2859 9.02961 57.8934 11.842L57.7726 12.7961H55.4581L55.5587 11.9625C55.7902 10.4358 55.438 9.90344 54.643 9.90344C53.8077 9.90344 53.3448 10.5262 53.2442 11.2996C53.0731 12.4647 53.8279 13.3184 54.9549 14.6141L54.9449 14.6041ZM68.7918 11.4603C69.1038 9.2104 67.8559 7.74396 65.5313 7.74396C63.2068 7.74396 61.5463 9.20036 61.2243 11.4603L60.0771 19.596C59.7651 21.8459 61.013 23.3123 63.3376 23.3123C65.6622 23.3123 67.3226 21.8559 67.6446 19.596L68.7918 11.4603ZM65.1188 19.6563C65.0181 20.4497 64.6558 21.1127 63.6596 21.1127C62.6633 21.1127 62.4721 20.4397 62.5728 19.6563L63.7401 11.4C63.8407 10.6065 64.2231 9.94362 65.2194 9.94362C66.2156 9.94362 66.3867 10.6166 66.2861 11.4L65.1188 19.6563ZM80.2034 8.00511H77.6977L76.0474 19.6563C75.9467 20.4497 75.5845 21.1127 74.5882 21.1127C73.5919 21.1127 73.4007 20.4397 73.5014 19.6563L75.1517 8.00511H72.646L71.0158 19.596C70.7038 21.8459 71.9516 23.3123 74.2762 23.3123C76.6008 23.3123 78.2613 21.8559 78.5833 19.596L80.2135 8.00511H80.2034ZM90.649 10.2349L90.961 8.00511H83.2123L82.9004 10.2349H85.5571L82.5381 31.7293H85.0237L88.0427 10.2349H90.6591H90.649ZM99.5046 23.0612L101.618 8.00511H99.1323L98.2367 14.3429H95.58L96.4756 8.00511H93.99L91.8767 23.0612H94.3623L95.258 16.5526H97.9146L97.019 23.0612H99.5046ZM109.819 8.00511L106.941 17.8885L107.022 8.00511H104.637L105.049 23.0612H107.183L110.111 13.5495L110.363 23.0612H112.496L117.135 8.00511H114.75L112.033 17.8885L111.953 8.00511H109.819ZM122.338 10.1947H126.303L126.615 8.00511H120.154L118.041 23.0612H124.663L124.975 20.8314H120.839L121.462 16.3317H124.391L124.683 14.2224H121.754L122.318 10.2048L122.338 10.1947ZM133.347 14.6141C132.22 13.3184 131.465 12.4647 131.636 11.2996C131.737 10.5262 132.2 9.90344 133.035 9.90344C133.87 9.90344 134.182 10.4458 133.951 11.9625L133.85 12.7961H136.165L136.286 11.842C136.678 9.02961 135.531 7.75401 133.337 7.75401C130.791 7.75401 129.473 9.48159 129.201 11.4C128.909 13.5495 130.056 14.9255 131.143 16.1308C132.25 17.3361 133.166 18.2802 132.965 19.6764C132.824 20.8013 132.109 21.1127 131.435 21.1127C130.449 21.1127 130.137 20.4397 130.308 19.2746L130.499 17.8985H128.185L127.973 19.4654C127.661 21.6952 128.849 23.3023 131.153 23.3023C133.458 23.3023 135.078 21.8258 135.41 19.4855C135.682 17.4265 134.685 16.1308 133.347 14.6141ZM146.902 10.2349L147.214 8.00511H139.465L139.154 10.2349H141.81L140.009 23.0612H142.495L144.296 10.2349H146.902ZM152.417 10.1947H156.382L156.694 8.00511H150.233L148.12 23.0612H154.741L155.053 20.8314H150.917L151.541 16.3317H154.47L154.762 14.2224H151.843L152.407 10.2048L152.417 10.1947ZM165.66 23.0612L164.613 16.4522C165.972 15.8495 166.636 14.9958 166.998 12.5149C167.351 9.95367 167.039 8.01515 164.12 8.01515H160.216L158.102 23.0713H160.608L161.484 16.8138H162.379L163.215 23.0713H165.66V23.0612ZM161.755 14.805L162.43 10.0943H163.406C164.533 10.0943 164.784 10.6166 164.533 12.4546C164.281 14.2927 163.859 14.815 162.732 14.815H161.755V14.805ZM176.75 23.0612L179.99 0.0100098H177.736L175.351 16.8841L173.449 8.00511H171.195L169.081 23.0612H171.336L172.634 13.8006L174.707 23.0612H176.76H176.75Z" fill="#75787B"/>
+                        <path d="M93.4969 27.2296H95.8114L96.4857 37.1732H94.6039L94.5535 35.1042H92.5711L91.9371 37.1732H90.0553L93.517 27.2296H93.4969ZM93.0139 33.6879H94.473L94.3321 29.5799L93.0139 33.6879ZM106.519 34.4814C106.297 36.0383 105.382 37.1632 103.107 37.1632H100.35L101.719 27.2195H104.476C106.75 27.2195 107.364 28.3545 107.163 29.9013L106.519 34.4714V34.4814ZM102.453 35.757H103.228C104.164 35.757 104.456 35.3753 104.566 34.5819L105.231 29.7908C105.341 29.0074 105.15 28.6157 104.214 28.6157H103.439L102.443 35.747L102.453 35.757ZM113.513 34.1901L115.797 27.2195H117.759L114.076 37.1632H112.114L111.218 27.2195H113.18L113.513 34.1901ZM122.841 27.2195H125.156L125.83 37.1632H123.948L123.898 35.0941H121.915L121.281 37.1632H119.4L122.861 27.2195H122.841ZM122.358 33.6779H123.817L123.676 29.5699L122.358 33.6779ZM134.253 37.1632L132.512 31.0463L131.677 37.1632H129.946L131.304 27.2195H133.035L134.645 33.0853L135.45 27.2195H137.181L135.823 37.1632H134.253ZM145.081 28.696L143.883 37.1632H141.921L143.118 28.696H141.035L141.247 27.2195H147.345L147.134 28.696H145.081ZM152.678 27.2195H154.993L155.667 37.1632H153.785L153.735 35.0941H151.753L151.119 37.1632H149.237L152.699 27.2195H152.678ZM152.195 33.6779H153.655L153.514 29.5699L152.195 33.6779ZM165.841 30.6848H163.949L164.11 29.4192C164.191 28.8668 163.989 28.5152 163.325 28.5152C162.661 28.5152 162.289 28.8768 162.208 29.4694L161.454 34.8932C161.373 35.4959 161.625 35.8474 162.309 35.8474C162.993 35.8474 163.406 35.4657 163.506 34.8028L163.698 33.4368H162.54L162.721 32.1612H165.73L165.036 37.1732H164.161L163.949 36.4702C163.285 37.1431 162.571 37.3339 161.826 37.3339C160.055 37.3339 159.32 36.2492 159.511 34.8229L160.266 29.5096C160.467 28.0231 161.786 27.0588 163.537 27.0588C165.288 27.0588 166.213 27.9929 166.012 29.4694L165.851 30.6848H165.841ZM172.292 31.3175H174.576L174.385 32.7036H172.1L171.688 35.6767H174.908L174.707 37.1532H169.544L170.933 27.2095H175.965L175.753 28.6558H172.654L172.282 31.3175H172.292Z" fill="#ED8322"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_304_2143">
+                            <rect width="180" height="41" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div class="footer-block-items">
+                <div class="footer-items">
+                    <div class="footer-items_title">Sales tools</div>
+                    <a href="#" class="footer-item"><span>Advanced Sales</span></a>
+                    <a href="#" class="footer-item"><span>Alumini Letters</span></a>
+                    <a href="#" class="footer-item"><span>Campus Presentations</span></a>
+                    <a href="#" class="footer-item"><span>Leadership</span></a>
+                    <a href="#" class="footer-item"><span>Life Skills</span></a>
+                    <a href="#" class="footer-item"><span>Motivation</span></a>
+                    <a href="#" class="footer-item"><span>Product Knowledge</span></a>
+                </div>
+                <div class="footer-items">
+                    <div class="footer-items_title">Delivery School</div>
+                    <a href="#" class="footer-item"><span>Share the Advantage</span></a>
+                    <a href="#" class="footer-item"><span>Summer Prep</span></a>
+                    <a href="#" class="footer-item"><span>Motivation</span></a>
+                    <a href="#" class="footer-item"><span>Advanced Sales</span></a>
+                    <a href="#" class="footer-item"><span>Alumini Letters</span></a>
+                    <a href="#" class="footer-item"><span>Campus Presentations</span></a>
+                    <a href="#" class="footer-item"><span>Leadership</span></a>
+                </div>
+                <div class="footer-items">
+                    <div class="footer-items_title">Leadership</div>
+                    <a href="#" class="footer-item"><span>Motivation</span></a>
+                    <a href="#" class="footer-item"><span>Advanced Sales</span></a>
+                    <a href="#" class="footer-item"><span>Alumini Letters</span></a>
+                    <a href="#" class="footer-item"><span>Campus Presentations</span></a>
+                    <a href="#" class="footer-item"><span>Leadership</span></a>
+                    <a href="#" class="footer-item"><span>Product Knowledge</span></a>
+                    <a href="#" class="footer-item"><span>Motivation</span></a>
+                </div>
+                <div class="footer-items">
+                    <div class="footer-items_title">Social Media</div>
+                    <a href="#" class="footer-item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_304_2199)">
+                                <path d="M14.0513 0H1.94866C0.874156 0 0 0.874156 0 1.94866V14.0513C0 15.1258 0.874156 16 1.94866 16H8.15187C8.41278 16 8.62431 15.7885 8.62431 15.5276V9.79912C8.62431 9.53822 8.41278 9.32669 8.15187 9.32669H6.45372V7.98191H8.15187C8.41278 7.98191 8.62431 7.77037 8.62431 7.50947V5.59722C8.62431 4.56234 9.46625 3.72041 10.5012 3.72041H12.1397V5.06519H10.5012C10.2078 5.06519 9.96912 5.30391 9.96912 5.59725V7.5095C9.96912 7.77041 10.1807 7.98194 10.4416 7.98194H12.1397V9.32672H10.4416C10.1807 9.32672 9.96912 9.53825 9.96912 9.79916V15.5276C9.96912 15.7885 10.1807 16 10.4416 16H14.0513C15.1258 16 16 15.1258 16 14.0513V1.94866C16 0.874156 15.1258 0 14.0513 0ZM15.0551 14.0513C15.0551 14.6048 14.6048 15.0552 14.0513 15.0552H10.914H10.9139V10.2716H12.6121C12.873 10.2716 13.0845 10.06 13.0845 9.79912V7.5095C13.0845 7.24859 12.873 7.03706 12.6121 7.03706H10.9139V6.01006H12.6121C12.873 6.01006 13.0845 5.79853 13.0845 5.53762V3.248C13.0845 2.98709 12.873 2.77556 12.6121 2.77556H10.5011C8.94525 2.77556 7.67944 4.04138 7.67944 5.59725V7.03706H5.98128C5.72038 7.03706 5.50884 7.24859 5.50884 7.5095V9.79912C5.50884 10.06 5.72038 10.2716 5.98128 10.2716H7.67944V15.0551H1.94866C1.39516 15.0551 0.944844 14.6048 0.944844 14.0513V1.94866C0.944844 1.39516 1.39512 0.944844 1.94866 0.944844H14.0513C14.6048 0.944844 15.0551 1.39512 15.0551 1.94866V14.0513Z" fill="#ED8323"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_304_2199">
+                                    <rect width="16" height="16" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="footer-item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_304_2189)">
+                                <path d="M11.6138 0H4.38616C1.96762 0 0 1.96763 0 4.38619V11.6138C0 14.0324 1.96762 16 4.38616 16H11.6138C14.0324 16 16 14.0324 16 11.6138V4.38619C16 1.96763 14.0324 0 11.6138 0ZM15.0551 11.6138C15.0551 13.5114 13.5114 15.0551 11.6138 15.0551H4.38616C2.48862 15.0551 0.944875 13.5114 0.944875 11.6138V4.38619C0.944875 2.48863 2.48862 0.944875 4.38616 0.944875H11.6138C13.5114 0.944875 15.0551 2.48863 15.0551 4.38619V11.6138Z" fill="#ED8323"/>
+                                <path d="M7.99998 3.61157C5.58017 3.61157 3.61151 5.58023 3.61151 8.00004C3.61151 10.4199 5.58014 12.3885 7.99998 12.3885C10.4198 12.3885 12.3885 10.4198 12.3885 8.00001C12.3885 5.5802 10.4198 3.61157 7.99998 3.61157ZM7.99998 11.4437C6.10117 11.4437 4.55636 9.89882 4.55636 8.00001C4.55636 6.1012 6.10117 4.55639 7.99998 4.55639C9.89882 4.55639 11.4436 6.10123 11.4436 8.00004C11.4436 9.89886 9.89882 11.4437 7.99998 11.4437Z" fill="#ED8323"/>
+                                <path d="M12.6509 2.01562C11.9158 2.01562 11.3176 2.61378 11.3176 3.34897C11.3176 4.08416 11.9158 4.68228 12.6509 4.68228C13.3861 4.68228 13.9843 4.08413 13.9843 3.34894C13.9843 2.61375 13.3861 2.01562 12.6509 2.01562ZM12.6509 3.73738C12.4368 3.73738 12.2625 3.56313 12.2625 3.34894C12.2625 3.13475 12.4368 2.9605 12.6509 2.9605C12.8651 2.9605 13.0394 3.13478 13.0394 3.34894C13.0394 3.56309 12.8651 3.73738 12.6509 3.73738Z" fill="#ED8323"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_304_2189">
+                                    <rect width="16" height="16" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="footer-item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_304_2168)">
+                                <path d="M15.9294 3.42299C15.8348 3.26912 15.6617 3.1819 15.4815 3.19752L14.6837 3.26702L15.4463 1.72974C15.5371 1.54664 15.5012 1.32605 15.3571 1.18114C15.2129 1.03624 14.9925 0.999298 14.809 1.08917L12.7906 2.07764C11.5437 1.41933 9.98576 1.61474 8.91376 2.59127C8.01907 3.40627 7.54879 4.65962 7.63648 5.9095C5.29807 5.67512 3.31869 4.33665 2.14825 2.17396C2.07059 2.03049 1.925 1.93664 1.76228 1.92511C1.59925 1.91377 1.44218 1.98602 1.34512 2.11718C0.619181 3.09786 0.568244 4.44249 1.13734 5.54871C0.980464 5.50909 0.813525 5.45546 0.6284 5.39362C0.469806 5.34059 0.294962 5.37456 0.16768 5.48306C0.0403989 5.59156 -0.0207888 5.75878 0.00643005 5.92381C0.231618 7.28906 1.02774 8.33831 2.28537 8.95938C2.12162 9.01641 1.95453 9.06272 1.78462 9.09813C1.61581 9.13332 1.47912 9.25681 1.42709 9.42122C1.37506 9.5856 1.41575 9.76528 1.53356 9.89119C2.43922 10.8593 3.74747 11.3357 4.67672 11.5643C3.62016 12.3917 2.47962 12.5302 0.822307 12.4733C0.630463 12.4674 0.453712 12.5755 0.373056 12.7494C0.292431 12.9234 0.323712 13.1287 0.452556 13.2707C1.14343 14.0322 3.6605 14.8909 6.30651 14.9553C6.41116 14.9578 6.51791 14.9592 6.62691 14.9592C8.48476 14.9592 10.9401 14.5609 12.7025 12.7985C14.0365 11.4646 14.8709 9.92891 15.1824 8.23434C15.434 6.86569 15.275 5.76968 15.1986 5.24293C15.193 5.20421 15.187 5.16312 15.1821 5.12718L15.9284 3.92437C16.0236 3.77093 16.024 3.57687 15.9294 3.42299ZM14.2542 5.37993C14.3958 6.35568 14.8266 9.32494 12.0278 12.1237C10.4009 13.7506 8.03126 14.0427 6.32969 14.0014C4.87778 13.966 3.57909 13.6884 2.63784 13.3717C3.02 13.3248 3.36056 13.2525 3.68203 13.1526C4.56825 12.8771 5.31694 12.3814 6.03813 11.5927C6.15835 11.4613 6.19529 11.2738 6.13401 11.1066C6.07272 10.9393 5.92335 10.8201 5.74666 10.7975C5.29169 10.7392 3.92463 10.5091 2.84812 9.7665C3.15834 9.63963 3.45753 9.48085 3.74322 9.29135C3.89994 9.18735 3.981 9.00103 3.95013 8.8155C3.91928 8.63 3.78238 8.47984 3.60044 8.43216C2.71934 8.20116 1.65596 7.68428 1.16562 6.53043C1.47875 6.58531 1.81922 6.59859 2.18234 6.51718C2.35065 6.4795 2.48553 6.35387 2.53503 6.18862C2.58456 6.02337 2.54106 5.84425 2.42125 5.72018C1.81112 5.08824 1.58296 4.17755 1.77872 3.39827C2.41978 4.33518 3.23194 5.12368 4.16244 5.70665C5.35279 6.45243 6.7421 6.86459 8.18026 6.89844C8.3266 6.90153 8.46698 6.83765 8.56017 6.72428C8.65329 6.61093 8.68911 6.46103 8.65726 6.31781C8.40982 5.20546 8.76273 4.01965 9.55636 3.29674C10.3795 2.5469 11.596 2.43314 12.5147 3.0203C12.655 3.10996 12.8319 3.11999 12.9815 3.04674L13.9671 2.56399L13.4512 3.60402C13.3746 3.75855 13.3873 3.94243 13.4845 4.0849C13.5817 4.22737 13.748 4.30646 13.9201 4.29137L14.6151 4.23084L14.295 4.74693C14.1875 4.92015 14.2098 5.07384 14.2542 5.37993Z" fill="#ED8323"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_304_2168">
+                                    <rect width="16" height="16" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>Twiter</span>
+                    </a>
+                    <a href="#" class="footer-item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.9213 2.70874H2.07872C0.9325 2.70874 0 3.64124 0 4.78746V11.2128C0 12.359 0.9325 13.2915 2.07872 13.2915H13.9213C15.0675 13.2915 16 12.359 16 11.2128V4.78746C16 3.64124 15.0675 2.70874 13.9213 2.70874ZM15.0551 11.2128C15.0551 11.838 14.5465 12.3466 13.9213 12.3466H2.07872C1.4535 12.3466 0.944875 11.838 0.944875 11.2128V4.78746C0.944875 4.16224 1.4535 3.65362 2.07872 3.65362H13.9213C14.5465 3.65362 15.0551 4.16224 15.0551 4.78746V11.2128Z" fill="#ED8323"/>
+                            <path d="M11.0393 7.59086L6.52232 4.98298C6.37616 4.89858 6.19607 4.89858 6.04988 4.98298C5.90372 5.06736 5.81366 5.22333 5.81366 5.39211V10.6079C5.81366 10.7766 5.90369 10.9326 6.04988 11.017C6.12294 11.0592 6.20454 11.0803 6.2861 11.0803C6.36766 11.0803 6.44925 11.0592 6.52232 11.017L11.0393 8.40911C11.1855 8.32473 11.2755 8.16876 11.2755 7.99998C11.2755 7.8312 11.1855 7.67523 11.0393 7.59086ZM6.75853 9.78961V6.21039L9.85822 8.00001L6.75853 9.78961Z" fill="#ED8323"/>
+                        </svg>
+                        <span>Youtube</span>
+                    </a>
+                    <a href="#" class="footer-item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_304_2179)">
+                                <path d="M3.27734 5.23096H0.474938C0.212656 5.23096 0 5.44361 0 5.70589V15.2158C0 15.4781 0.212656 15.6908 0.474938 15.6908H3.27738C3.53966 15.6908 3.75231 15.4781 3.75231 15.2158V5.70589C3.75228 5.44361 3.53966 5.23096 3.27734 5.23096ZM2.80244 14.7409H0.949875V6.18083H2.80244V14.7409Z" fill="#ED8323"/>
+                                <path d="M14.8365 6.76073C14.0153 5.76011 12.8621 5.2312 11.5015 5.2312C10.7648 5.2312 10.1133 5.38614 9.55413 5.69308C9.54719 5.43683 9.33731 5.2312 9.07938 5.2312H6.27694C6.01466 5.2312 5.802 5.44386 5.802 5.70614V15.216C5.802 15.4783 6.01466 15.691 6.27694 15.691H9.07938C9.34166 15.691 9.55432 15.4783 9.55432 15.216V10.3302C9.55432 9.58761 10.1584 8.98348 10.901 8.98348C11.6435 8.98348 12.2477 9.58761 12.2477 10.3302V15.216C12.2477 15.4783 12.4603 15.691 12.7226 15.691H15.5251C15.7873 15.691 16 15.4783 16 15.216V10.3302C16 8.94255 15.5868 7.67486 14.8365 6.76073ZM15.0501 14.7411H13.1975V10.3302C13.1975 9.06383 12.1673 8.03361 10.9009 8.03361C9.63463 8.03361 8.60441 9.06383 8.60441 10.3302V14.7411H6.75185V6.18101H8.60441V6.64514C8.60441 6.83811 8.72116 7.01192 8.89985 7.08486C9.0785 7.15773 9.28353 7.11536 9.4186 6.97751C9.93638 6.44901 10.6372 6.18101 11.5015 6.18101C13.9528 6.18101 15.0501 8.26489 15.0501 10.3301V14.7411H15.0501Z" fill="#ED8323"/>
+                                <path d="M1.87616 0.309082C0.841656 0.309082 0 1.15071 0 2.18521C0 3.21971 0.841656 4.06133 1.87616 4.06133C2.91066 4.06133 3.75231 3.21971 3.75231 2.18521C3.75228 1.15071 2.91066 0.309082 1.87616 0.309082ZM1.87616 3.11149C1.36541 3.11149 0.949875 2.69599 0.949875 2.18521C0.949875 1.67443 1.36541 1.25893 1.87616 1.25893C2.38691 1.25893 2.80244 1.67446 2.80244 2.18521C2.80244 2.69596 2.38688 3.11149 1.87616 3.11149Z" fill="#ED8323"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_304_2179">
+                                    <rect width="16" height="16" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>Linkedin</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">© Copyright by Southwestern Advantage 2022</div>
+    </footer>
+</main>
+
+<script type='text/javascript' src='libs/Swiper/swiper-bundle.min.js'></script>
+<script type='text/javascript' src='js/mine.js'></script>
+</body>
+</html>
