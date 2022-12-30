@@ -280,6 +280,86 @@ html {
     .post-description-file .wrapper .post_tags .post_tag:last-child {
       margin-right: 0; }
 
+.post_content {
+  margin-bottom: 35px;
+  padding-top: 25px; }
+  .post_content .wrapper {
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto; }
+    .post_content .wrapper h3, .post_content .wrapper h4 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      color: #1A1A1A;
+      margin-bottom: 15px; }
+    .post_content .wrapper h4 {
+      font-size: 16px; }
+    .post_content .wrapper p {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #1A1A1A;
+      margin-bottom: 15px; }
+    .post_content .wrapper img {
+      display: block;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 100%;
+      height: auto; }
+    .post_content .wrapper ul {
+      margin-bottom: 15px;
+      list-style: initial;
+      padding-left: 25px; }
+      .post_content .wrapper ul li {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #1A1A1A; }
+    .post_content .wrapper ol {
+      margin-bottom: 15px;
+      list-style: initial;
+      padding-left: 25px; }
+      .post_content .wrapper ol li {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #1A1A1A; }
+    @media (max-width: 600px) {
+      .post_content .wrapper h3, .post_content .wrapper h4 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 18px;
+        padding-bottom: 12px; }
+      .post_content .wrapper p {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 12px; }
+      .post_content .wrapper img {
+        margin-top: 23px;
+        margin-bottom: 23px; }
+      .post_content .wrapper ul {
+        padding-right: 20px;
+        padding-left: 45px;
+        padding-bottom: 12px; }
+      .post_content .wrapper ol {
+        padding-right: 20px;
+        padding-left: 45px;
+        padding-bottom: 12px; } }
+  @media (max-width: 600px) {
+    .post_content {
+      margin-bottom: 10px;
+      padding-left: 0;
+      padding-right: 0; } }
+
 .slider-small-block {
   background: #F5F8FA; }
   .slider-small-block .wrapper {

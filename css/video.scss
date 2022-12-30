@@ -218,6 +218,100 @@
         }
     }
 }
+.post_content {
+    margin-bottom: 35px;
+    padding-top: 25px;
+    .wrapper {
+        max-width: 730px;
+        @include margin-left-right-auto;
+        h3, h4 {
+            font-family: $poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: #1A1A1A;
+            margin-bottom: 15px;
+        }
+        h4 {
+            font-size: 16px;
+        }
+        p {
+            font-family: $poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #1A1A1A;
+            margin-bottom: 15px;
+        }
+        img {
+            display: block;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 100%;
+            height: auto;
+        }
+        ul {
+            margin-bottom: 15px;
+            list-style: initial;
+            padding-left: 25px;
+            li {
+                font-family: $poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #1A1A1A;
+            }
+        }
+        ol {
+            margin-bottom: 15px;
+            list-style: initial;
+            padding-left: 25px;
+            li {
+                font-family: $poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #1A1A1A;
+            }
+        }
+        @media (max-width: 600px) {
+            h3, h4 {
+                padding-left: 20px;
+                padding-right: 20px;
+                font-size: 18px;
+                padding-bottom: 12px;
+            }
+            p {
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 12px;
+            }
+            img {
+                margin-top: 23px;
+                margin-bottom: 23px;
+            }
+            ul {
+                padding-right: 20px;
+                padding-left: 45px;
+                padding-bottom: 12px;
+            }
+            ol {
+                padding-right: 20px;
+                padding-left: 45px;
+                padding-bottom: 12px;
+            }
+        }
+    }
+    @media (max-width: 600px) {
+        margin-bottom: 10px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 
 .slider-small-block {
     background: #F5F8FA;
