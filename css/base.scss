@@ -1540,7 +1540,7 @@ footer {
 **/
 .submit_popup {
     z-index: 10;
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -1557,7 +1557,7 @@ footer {
         height: inherit;
         background: #FFFFFF;
         .submit_video {
-            //@include dsp-flex;
+            @include dsp-flex;
             display: none;
             @include flex-direction-column;
             background: #FFFFFF;
@@ -1859,23 +1859,87 @@ footer {
                         }
                     }
                 }
-                .forms_content_field:last-child {
+                .fifield {
                     .submit_input {
                         width: auto;
+                    }
+                }
+                .textarea {
+                    height:auto;
+                    @include align-items-initial;
+                    &:before {
+                        display: none;
+                        background-image: none;
+                        top: 0;
+                        left: 0;
+                    }
+                    svg {
+                        margin-top: 12px;
+                        margin-right: 0;
+                    }
+                    .submit_textarea {
+                        resize:none;
+                        padding: 10px;
+                        border: none;
+                        width: 90%;
+                        height: 200px;
+                        font-family: $poppins;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #1A1A1A;
+                        background: #FAFDFE;
+                        &::-webkit-input-placeholder {
+                            font-family: $poppins;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #8E989B;
+                        }
+                        &::-moz-placeholder {
+                            font-family: $poppins;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #8E989B;
+                        }
+                        &:-ms-input-placeholder {
+                            font-family: $poppins;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #8E989B;
+                        }
+                        &:-webkit-autofill,
+                        &:focus-visible,
+                        &:-webkit-autofill:hover,
+                        &:-webkit-autofill:focus,
+                        &:-webkit-autofill:focus-visible,
+                        &:-webkit-autofill,
+                        &:-webkit-autofill:hover,
+                        &:-webkit-autofill:focus,
+                        &:-webkit-autofill,
+                        &:-webkit-autofill:hover,
+                        &:-webkit-autofill:focus {
+                            border-top: none;
+                            border-left: none;
+                            border-right: none;
+                            border-bottom: none;
+                            -webkit-text-fill-color: #1A1A1A;
+                            -webkit-box-shadow: none;
+                            transition: background-color 5000s ease-in-out 0s;
+                            outline: none;
+                        }
                     }
                 }
                 .select {
                     padding-left: 25px;
                     &:before {
                         display: block;
-                        content: '';
-                        position: absolute;
-                        width: 18px;
-                        height: 18px;
-                        background-image: url("../images/Check.svg");
-                        background-repeat: no-repeat;
-                        top: 10px;
-                        left: 5px;
                     }
                     position: relative;
                     .span-over {
@@ -1903,6 +1967,10 @@ footer {
                         font-size: 14px;
                         line-height: 22px;
                         color: #1A1A1A;
+                    }
+                    .submit_textarea {
+                        width: 100%;
+                        margin-left: -20px;
                     }
                 }
                 .active {
@@ -2260,4 +2328,7 @@ footer {
             }
         }
     }
+}
+.submit_popup_active {
+    display: block;
 }

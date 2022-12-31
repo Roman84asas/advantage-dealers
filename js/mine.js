@@ -376,4 +376,24 @@
             }
         })
     }
+
+    if(document.querySelector('.add_video')) {
+        document.querySelector('.add_video').addEventListener('click', function () {
+            document.querySelector('html').style.overflow = 'hidden';
+            togglePopupFilter(document.querySelector('.submit_popup'), 'submit_popup_active');
+        })
+        document.querySelector('.add_video_header').addEventListener('click', function () {
+            document.querySelector('html').style.overflow = 'hidden';
+            togglePopupFilter(document.querySelector('.submit_popup'), 'submit_popup_active');
+        })
+    }
+
+    if(document.querySelectorAll('.close_submit_popup')) {
+        document.querySelectorAll('.close_submit_popup').forEach(function (element) {
+            element.addEventListener('click', function () {
+                document.querySelector('html').style.overflow = 'initial';
+                togglePopupFilter(document.querySelector('.submit_popup'), 'submit_popup_active');
+            })
+        })
+    }
 })();

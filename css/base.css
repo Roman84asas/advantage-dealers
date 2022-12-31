@@ -1679,7 +1679,7 @@ footer .bottom-footer {
 **/
 .submit_popup {
   z-index: 10;
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -1696,6 +1696,10 @@ footer .bottom-footer {
     height: inherit;
     background: #FFFFFF; }
     .submit_popup .wrapper .submit_video {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: flex;
       display: none;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
@@ -2027,21 +2031,68 @@ footer .bottom-footer {
                 -o-transition: all 0.3s ease-in-out;
                 background: #ED8323;
                 color: #FFFFFF; }
-        .submit_popup .wrapper .submit_text .forms_content .forms_content_field:last-child .submit_input {
+        .submit_popup .wrapper .submit_text .forms_content .fifield .submit_input {
           width: auto; }
+        .submit_popup .wrapper .submit_text .forms_content .textarea {
+          height: auto;
+          -webkit-align-items: initial;
+          align-items: initial; }
+          .submit_popup .wrapper .submit_text .forms_content .textarea:before {
+            display: none;
+            background-image: none;
+            top: 0;
+            left: 0; }
+          .submit_popup .wrapper .submit_text .forms_content .textarea svg {
+            margin-top: 12px;
+            margin-right: 0; }
+          .submit_popup .wrapper .submit_text .forms_content .textarea .submit_textarea {
+            resize: none;
+            padding: 10px;
+            border: none;
+            width: 90%;
+            height: 200px;
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #1A1A1A;
+            background: #FAFDFE; }
+            .submit_popup .wrapper .submit_text .forms_content .textarea .submit_textarea::-webkit-input-placeholder {
+              font-family: "Poppins", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 22px;
+              color: #8E989B; }
+            .submit_popup .wrapper .submit_text .forms_content .textarea .submit_textarea::-moz-placeholder {
+              font-family: "Poppins", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 22px;
+              color: #8E989B; }
+            .submit_popup .wrapper .submit_text .forms_content .textarea .submit_textarea:-ms-input-placeholder {
+              font-family: "Poppins", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 22px;
+              color: #8E989B; }
+            .submit_popup .wrapper .submit_text .forms_content .textarea .submit_textarea:-webkit-autofill, .submit_popup .wrapper .submit_text .forms_content .textarea .submit_textarea:focus-visible, .submit_popup .wrapper .submit_text .forms_content .textarea .submit_textarea:-webkit-autofill:hover, .submit_popup .wrapper .submit_text .forms_content .textarea .submit_textarea:-webkit-autofill:focus, .submit_popup .wrapper .submit_text .forms_content .textarea .submit_textarea:-webkit-autofill:focus-visible, .submit_popup .wrapper .submit_text .forms_content .textarea .submit_textarea:-webkit-autofill, .submit_popup .wrapper .submit_text .forms_content .textarea .submit_textarea:-webkit-autofill:hover, .submit_popup .wrapper .submit_text .forms_content .textarea .submit_textarea:-webkit-autofill:focus, .submit_popup .wrapper .submit_text .forms_content .textarea .submit_textarea:-webkit-autofill, .submit_popup .wrapper .submit_text .forms_content .textarea .submit_textarea:-webkit-autofill:hover, .submit_popup .wrapper .submit_text .forms_content .textarea .submit_textarea:-webkit-autofill:focus {
+              border-top: none;
+              border-left: none;
+              border-right: none;
+              border-bottom: none;
+              -webkit-text-fill-color: #1A1A1A;
+              -webkit-box-shadow: none;
+              transition: background-color 5000s ease-in-out 0s;
+              outline: none; }
         .submit_popup .wrapper .submit_text .forms_content .select {
           padding-left: 25px;
           position: relative; }
           .submit_popup .wrapper .submit_text .forms_content .select:before {
-            display: block;
-            content: '';
-            position: absolute;
-            width: 18px;
-            height: 18px;
-            background-image: url("../images/Check.svg");
-            background-repeat: no-repeat;
-            top: 10px;
-            left: 5px; }
+            display: block; }
           .submit_popup .wrapper .submit_text .forms_content .select .span-over {
             display: block;
             position: absolute;
@@ -2064,6 +2115,9 @@ footer .bottom-footer {
             font-size: 14px;
             line-height: 22px;
             color: #1A1A1A; }
+          .submit_popup .wrapper .submit_text .forms_content .select .submit_textarea {
+            width: 100%;
+            margin-left: -20px; }
         .submit_popup .wrapper .submit_text .forms_content .active {
           border: 1px solid #ED8323; }
           .submit_popup .wrapper .submit_text .forms_content .active .span-over {
@@ -2390,3 +2444,6 @@ footer .bottom-footer {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; } }
+
+.submit_popup_active {
+  display: block; }
