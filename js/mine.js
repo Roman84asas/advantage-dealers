@@ -323,4 +323,57 @@
             console.log('confirm');
         })
     }
+
+
+    if(document.querySelector('.drop_drag_content')) {
+        const target = document.getElementById("drop_drag_content");
+        target.addEventListener("dragover", (event) => {
+            event.preventDefault();
+        });
+        target.addEventListener('drop', function (event) {
+            event.preventDefault();
+
+            if (event.dataTransfer.items) {
+                // Use DataTransferItemList interface to access the file(s)
+                [...event.dataTransfer.items].forEach((item, i) => {
+                    // If dropped items aren't files, reject them
+                    if (item.kind === 'file') {
+                        const file = item.getAsFile();
+                        console.log(file);
+                    }
+                });
+            } else {
+                // Use DataTransfer interface to access the file(s)
+                [...event.dataTransfer.files].forEach((file, i) => {
+                    console.log(file);
+                });
+            }
+        })
+    }
+
+    if(document.querySelectorAll('.submit_input')) {
+        document.querySelectorAll('.submit_input').forEach(function (element) {
+            element.addEventListener('input', function () {
+                element.parentElement.classList.add('active');
+                if(element.value.length > 0) {
+                    element.parentElement.classList.add('select');
+                } else {
+                    element.parentElement.classList.remove('select');
+                }
+            })
+            element.addEventListener("blur", function( event ) {
+                element.parentElement.classList.remove('active');
+            });
+        })
+        document.querySelector('#tag').addEventListener('keydown', function (event) {
+            if (event.keyCode === 13) {
+                let parentTags = document.querySelector('.forms_content_field_tags');
+                let childTag = document.createElement('div');
+                childTag.setAttribute('class', 'item_tag');
+                childTag.innerHTML = '#'+document.querySelector('#tag').value;
+                parentTags.appendChild(childTag);
+                document.querySelector('#tag').value = '';
+            }
+        })
+    }
 })();
