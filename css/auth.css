@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+.wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+.content {
+  width: 100%; }
+
+section {
+  padding: 0 30px; }
+  @media (max-width: 950px) {
+    section {
+      padding: 0 20px; } }
+
+body {
+  background: #FFFFFF; }
+
+html {
+  height: 100%; }
