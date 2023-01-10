@@ -710,8 +710,7 @@
             </div>
         </div>
     </section>
-
-    <section class="auth-login">
+    <section class="auth login">
         <div class="wrapper">
             <div class="auth_section_top">
                 <div class="auth_circle"></div>
@@ -726,6 +725,87 @@
                     <label for="login-password">Password</label>
                     <input type="password" id="login-password" class="auth-input">
                 </div>
+            </div>
+            <div class="auth_section_submit">
+                <a href="#" class="sign_button">Sign up</a>
+                <div class="sign_button gray" id="sign-in">Sign In</div>
+            </div>
+            <div class="auth_section_bottom">
+                <a href="#" class="sign_button_bottom">Forgot password </a>
+            </div>
+        </div>
+    </section>
+    <section class="auth forgot">
+        <div class="wrapper">
+            <div class="auth_section_top">
+                <div class="auth_circle"></div>
+                <div class="auth_section_name">Сброс пароля</div>
+            </div>
+            <div class="auth_section_content">
+                <div class="auth_field">
+                    <label for="forgot-email">Email</label>
+                    <input type="email" id="forgot-email" class="auth-input">
+                </div>
+            </div>
+            <div class="auth_section_submit">
+                <a href="#" class="sign_button hidden"></a>
+                <div class="sign_button gray" id="send-forgot">Send</div>
+            </div>
+        </div>
+    </section>
+    <section class="auth forgot-message">
+        <div class="wrapper">
+            <div class="auth_section_top_title">
+                Message sent
+            </div>
+            <div class="auth_section_description">
+                We sent an email to name@mail.com. If this email address is associated with your  account, you will be
+                able to reset your password.
+            </div>
+            <div class="auth_section_submit">
+                <div class="sign_button" id="try-again">Try again</div>
+                <a href="#" class="sign_button gray">Back to Home</a>
+            </div>
+        </div>
+    </section>
+    <section class="auth register">
+        <div class="wrapper">
+            <div class="auth_section_top">
+                <div class="auth_circle"></div>
+                <div class="auth_section_name">Регистрация</div>
+            </div>
+            <div class="auth_section_content">
+                <div class="auth_field">
+                    <label for="register-organization">Organization</label>
+                    <input type="text" id="register-organization" class="auth-input">
+                </div>
+                <div class="auth_field">
+                    <label for="register-name">Contact person (first and last name)</label>
+                    <input type="text" id="register-name" class="auth-input">
+                </div>
+                <div class="auth_field">
+                    <label for="register-phone">Phone number</label>
+                    <input type="tel" id="register-phone" class="auth-input">
+                </div>
+                <div class="auth_field">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" class="auth-input">
+                </div>
+                <div class="auth_field">
+                    <label for="register-password">Create a password</label>
+                    <input type="password" id="register-password" class="auth-input">
+                </div>
+                <div class="auth_field">
+                    <label for="register-password-repeat">Repeat password</label>
+                    <input type="password" id="register-password-repeat" class="auth-input">
+                </div>
+            </div>
+            <div class="auth_section_submit">
+                <span class="sing_up_smile">I already have an account :)</span>
+                <div class="sign_button gray" id="send-up">Send</div>
+            </div>
+            <div class="auth_section_bottom">
+                <span class="you_agree">By clicking "send" you agree to the processing of personal data</span>
             </div>
         </div>
     </section>

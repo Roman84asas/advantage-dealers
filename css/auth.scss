@@ -1,3 +1,232 @@
 @charset "UTF-8";
 @import "Variable/_variable";
 
+.content {
+    background: #F5F8FA;
+}
+
+.auth {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include margin-left-right-auto;
+    @include fit_content;
+    max-width: 692px;
+    width: auto;
+    .wrapper {
+        .auth_section_top_title {
+            font-family: $poppins;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 28px;
+            color: #000000;
+            margin-bottom: 24px;
+        }
+        .auth_section_description {
+            font-family: $poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 40px;
+            color: #000000;
+        }
+        .auth_section_top {
+            @include dsp-flex;
+            @include align-items-center;
+            margin-bottom: 16px;
+            .auth_circle {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: #1EA4BC;
+                margin-right: 8px;
+            }
+            .auth_section_name {
+                font-family: $poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: #202020;
+            }
+        }
+        .auth_section_content {
+            background: #FFFFFF;
+            border-radius: 6px;
+            width: auto;
+            padding: 15px;
+            margin-bottom: 40px;
+            .auth_field {
+                margin-bottom: 28px;
+                width: 100%;
+                max-width: 660px;
+                label {
+                    font-family: $poppins;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #888888;
+                    margin-bottom: 8px;
+                    display: block;
+                }
+                .auth-input {
+                    background: #FFFFFF;
+                    width: 100%;
+                    max-width: -webkit-fill-available;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 6px;
+                    height: 60px;
+                    font-family: $poppins;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #1A1A1A;
+                    &::-webkit-input-placeholder {
+                        font-family: $poppins;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #8E989B;
+                    }
+                    &::-moz-placeholder {
+                        font-family: $poppins;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #8E989B;
+                    }
+                    &:-ms-input-placeholder {
+                        font-family: $poppins;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #8E989B;
+                    }
+                    &:-webkit-autofill,
+                    &:focus-visible,
+                    &:-webkit-autofill:hover,
+                    &:-webkit-autofill:focus,
+                    &:-webkit-autofill:focus-visible,
+                    &:-webkit-autofill,
+                    &:-webkit-autofill:hover,
+                    &:-webkit-autofill:focus,
+                    &:-webkit-autofill,
+                    &:-webkit-autofill:hover,
+                    &:-webkit-autofill:focus {
+                        -webkit-text-fill-color: #1A1A1A;
+                        -webkit-box-shadow: none;
+                        transition: background-color 5000s ease-in-out 0s;
+                        outline: none;
+                    }
+                }
+                @media (max-width: 750px) {
+                    .auth-input {
+                        height: 50px;
+                    }
+                }
+            }
+            .auth_field:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .auth_section_submit {
+            @include dsp-flex;
+            @include justify-content-space-between;
+            max-width: 692px;
+            width: 100%;
+            margin-bottom: 15px;
+            .sing_up_smile {
+                font-family: $poppins;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                color: #4D5E6F;
+                display: block;
+                margin-right: 15px;
+            }
+            .sign_button {
+                margin-right: 15px;
+                max-width: 336px;
+                width: 100%;
+                height: 58px;
+                @include dsp-flex;
+                @include align-items-center;
+                @include justify-content-center;
+                background: #FFFFFF;
+                border: 1px solid #828282;
+                border-radius: 6px;
+                font-family: $poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                text-align: center;
+                color: #4D5E6F;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            .gray {
+                background: #828282;
+                color: $white;
+                margin-right: 0;
+            }
+            .hidden {
+                width: 0;
+                height: 0;
+                border: 1px solid #FFFFFF;
+            }
+            @media (max-width: 615px) {
+                @include flex-direction-column;
+                @include align-items-center;
+                .sign_button, .sing_up_smile {
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+                .gray {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .auth_section_bottom {
+            .sign_button_bottom {
+                display: block;
+                margin-left: auto;
+                @include fit_content;
+                font-family: $poppins;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 24px;
+                color: #4D5E6F;
+                text-decoration: none;
+            }
+            .you_agree {
+                display: block;
+                margin-left: auto;
+                font-family: $poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                color: #979797;
+                max-width: 335px;
+                width: 100%;
+            }
+            @media (max-width: 615px) {
+                .sign_button_bottom {
+                    @include margin-left-right-auto;
+                }
+                .you_agree {
+                    @include margin-left-right-auto;
+                }
+            }
+        }
+    }
+}
